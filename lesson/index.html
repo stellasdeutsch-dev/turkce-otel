@@ -463,6 +463,22 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
  .js .rv,.js .row.pre{opacity:1;translate:0 0}
  .flip-in{transition:none}
 }
+/* иллюстрации */
+.vz{position:relative;margin:26px 0 0;background:var(--peach-2);border-radius:var(--r);padding:14px;display:grid;gap:18px;transition:translate .25s,box-shadow .25s}
+.vz:hover{translate:0 -3px;box-shadow:var(--sh2)}
+.vz.pl{background:#fff;box-shadow:var(--sh)}
+.vz-a{width:100%;height:auto;border-radius:16px}
+.vz-o{position:relative;min-width:0}
+.vz .ov{position:absolute;translate:-50% -50%;font-weight:800;font-size:clamp(13px,1.6vw,16px);line-height:1;white-space:nowrap;hyphens:none;color:var(--ink)}
+.vz .ov.w{color:#fff}
+.vz-c{display:grid;gap:10px;align-content:center;min-width:0;padding:0 4px 4px}
+.vz-t{font:400 clamp(26px,3vw,32px)/1.12 Forum,Georgia,serif;color:var(--ink);text-wrap:balance}
+.vz-r{display:flex;align-items:center;gap:12px;font-size:15px;line-height:1.4;color:var(--mute)}
+.vz-r .tr-i{font-size:16.5px;white-space:normal}
+.vz-k{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none;font-weight:800;font-size:15px;line-height:1;color:var(--red);background:var(--peach)}
+.vz-k .ic{width:20px;height:20px}
+.vz .bob{transform-box:fill-box;transform-origin:50% 0;animation:sway 5s ease-in-out infinite}
+@media(min-width:700px){.vz{grid-template-columns:1.25fr 1fr;align-items:center;gap:32px;padding:22px}.vz.col{grid-template-columns:minmax(0,1fr)}.vz-c{padding:0}}
 </style>
 
 </head>
@@ -568,6 +584,25 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <div class="ex"><button type="button" class="say" data-say="Güle güle, Rezervasyon Bey!" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Güle güle, Rezervasyon Bey!</p><p class="ru">Счастливо, господин Бронь!</p></div></div>
     <p class="line big">Мне не хватило двух букв и одного слова.</p>
     <div class="ex"><button type="button" class="say" data-say="Rezervasyonum var." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</p><p class="ru">У меня есть бронь.</p></div></div>
+    <figure class="vz col" data-vz>
+      <svg class="vz-a" viewBox="0 0 640 400" role="img" aria-label="Номер отеля: кровать с двумя подушками, на тумбочке конверт с ключом от номера 305">
+        <rect width="640" height="400" fill="#F6F1EB"/>
+        <path d="M0 312h640v88H0z" fill="#E7DCCF"/>
+        <path d="M60 332V126a22 22 0 0 1 22-22h300a22 22 0 0 1 22 22v206z" fill="#B98A5E"/><path d="M98 104v228M142 104v228M186 104v228M230 104v228M274 104v228M318 104v228M362 104v228" stroke="#A97A4F" stroke-width="3"/>
+        <rect x="30" y="238" width="414" height="94" rx="20" fill="#E3283A"/>
+        <rect x="44" y="208" width="386" height="60" rx="26" fill="#FBF8F4"/>
+        <g data-v><rect x="70" y="146" width="150" height="86" rx="30" fill="#fff"/><path d="M82 152c8 16 8 62 0 76M208 152c-8 16-8 62 0 76" fill="none" stroke="#E7DCCF" stroke-width="3"/></g>
+        <g data-v><rect x="238" y="146" width="150" height="86" rx="30" fill="#fff"/><path d="M250 152c8 16 8 62 0 76M376 152c-8 16-8 62 0 76" fill="none" stroke="#E7DCCF" stroke-width="3"/></g>
+        <rect x="480" y="262" width="124" height="102" rx="8" fill="#B98A5E"/><rect x="494" y="284" width="96" height="30" rx="5" fill="#A97A4F"/><rect x="494" y="324" width="96" height="30" rx="5" fill="#A97A4F"/>
+        <g data-v><g transform="rotate(-6 540 230)"><rect x="486" y="200" width="118" height="62" rx="6" fill="#FBF8F4"/><path d="M486 206l59 30 59-30" fill="none" stroke="#E7DCCF" stroke-width="4"/></g></g>
+        <g class="bob"><path d="M540 40v42" stroke="#2B2725" stroke-width="3"/><circle cx="540" cy="100" r="20" fill="none" stroke="#C9A45C" stroke-width="7"/><rect x="510" y="122" width="60" height="60" rx="10" fill="#E3283A"/><text x="540" y="154" text-anchor="middle" dominant-baseline="central" font-family="Manrope,sans-serif" font-weight="800" font-size="24" fill="#fff">305</text></g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Подушку принесли. Две.</p>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-key"/></svg></span><span><span class="tr-i" lang="tr">Yastık ben.</span> Дословно: подушка я.</span></div>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-pass"/></svg></span><span><span class="tr-i" lang="tr">Rezervasyon Bey</span> Так было написано на конверте.</span></div>
+      </div>
+    </figure>
   </div>
 </div></section>
 
@@ -579,12 +614,50 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <div class="card rv"><div class="num">2</div><h3 style="margin-top:14px">Хвост</h3><p>Русское "мой", "в", "у меня" турки клеят к концу слова. Предлогов нет. Есть хвосты.</p><div class="ex"><button type="button" class="say" data-say="anahtarım" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">anahtar</b><i class="a1">ım</i></p><p class="ru">мой ключ</p></div></div></div>
     <div class="card rv"><div class="num">3</div><h3 style="margin-top:14px">Глагол</h3><p>Всегда в конце. Вопрос живёт там же. Сказать "нет" можно одним словом.</p><div class="ex"><button type="button" class="say" data-say="Anahtarım yok." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Anahtar</b><i class="a1">ım</i> yok.</p><p class="ru">У меня нет ключа.</p></div></div></div>
   </div>
+  <figure class="vz" data-vz style="margin-top:30px">
+    <svg class="vz-a" viewBox="0 0 640 320" role="img" aria-label="Три сцены: ключ на крючке, ключ с биркой, пустой крючок">
+      <rect width="640" height="320" fill="#F6F1EB"/>
+      <rect y="266" width="640" height="54" fill="#E7DCCF"/>
+      <path d="M212 0v320M428 0v320" stroke="#fff" stroke-width="6"/>
+      <g font-family="Manrope,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central" fill="#fff" font-size="32">
+        <g data-v><circle cx="44" cy="46" r="26" fill="#E3283A"/><text x="44" y="47">1</text></g>
+        <g data-v><circle cx="260" cy="46" r="26" fill="#E3283A"/><text x="260" y="47">2</text></g>
+        <g data-v><circle cx="476" cy="46" r="26" fill="#E3283A"/><text x="476" y="47">3</text></g>
+      </g>
+      <g stroke="#2B2725" stroke-width="10" stroke-linecap="round" fill="none"><path d="M106 96v30M320 96v30M536 96v30"/></g>
+      <g data-v><g stroke="#C9A45C" stroke-width="13" fill="none" stroke-linecap="round"><circle cx="106" cy="154" r="26"/><path d="M106 180v76M106 216h24M106 242h18"/></g></g>
+      <g data-v><g stroke="#C9A45C" stroke-width="13" fill="none" stroke-linecap="round"><circle cx="320" cy="154" r="26"/><path d="M320 180v76M320 216h24M320 242h18"/></g><path d="M342 200h46l14 14-14 14h-46z" fill="#E3283A"/><circle cx="356" cy="214" r="5" fill="#fff"/></g>
+      <g data-v><circle cx="536" cy="154" r="26" fill="none" stroke="#D8D1CB" stroke-width="5" stroke-dasharray="4 8"/><path d="M536 180v76M536 216h24M536 242h18" fill="none" stroke="#D8D1CB" stroke-width="5" stroke-dasharray="4 8" stroke-linecap="round"/></g>
+    </svg>
+    <div class="vz-c">
+      <p class="vz-t">Вещь, хвост, глагол</p>
+      <div class="vz-r"><span class="vz-k">1</span><span><span class="tr-i" lang="tr">anahtar</span> ключ</span></div>
+      <div class="vz-r"><span class="vz-k">2</span><span><span class="tr-i" lang="tr"><b class="rt">anahtar</b><i class="a1">ım</i></span> мой ключ</span></div>
+      <div class="vz-r"><span class="vz-k">3</span><span><span class="tr-i" lang="tr"><b class="rt">Anahtar</b><i class="a1">ım</i> yok.</span> У меня нет ключа.</span></div>
+    </div>
+  </figure>
   <p class="line big ctr rv">Вещь. Хвост. Глагол. Можно идти к стойке.</p>
 </div></div></section>
 
 <section class="sec" id="why" data-floor data-name="Зачем"><div class="wrap">
   <div class="rv"><h2>Зачем, если <em>есть английский</em></h2>
   <p class="lead">На ресепшене говорят по-английски. Днём. Ночью смена другая, кондиционер сломан, а на стойке мужик, который улыбается и разводит руками. <b>Вот восемь моментов, когда нужна одна фраза.</b></p></div>
+  <figure class="vz pl" data-vz style="margin-top:30px">
+    <svg class="vz-a" viewBox="0 0 640 360" role="img" aria-label="Ночной ресепшен: за окном луна, кондиционер сломан и капает, мужик за стойкой разводит руками">
+      <rect width="640" height="360" fill="#3A3230"/>
+      <path d="M34 34h190v190H34z" fill="#211E1E"/><path d="M34 34h190v190H34z" fill="none" stroke="#F6F1EB" stroke-width="8"/><path d="M129 34v190M34 129h190" stroke="#F6F1EB" stroke-width="5"/>
+      <g data-v><circle cx="178" cy="82" r="28" fill="#F9DFD0"/><circle cx="168" cy="74" r="24" fill="#211E1E"/></g>
+      <g fill="#F6F1EB"><circle cx="66" cy="66" r="3"/><circle cx="96" cy="170" r="3"/><circle cx="188" cy="176" r="3"/></g>
+      <g data-v><rect x="330" y="46" width="250" height="70" rx="12" fill="#F6F1EB"/><path d="M350 94h210" stroke="#D8D1CB" stroke-width="5"/><circle cx="556" cy="68" r="9" fill="#E3283A"/><path d="M552 64l8 8m0-8-8 8" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></g>
+      <g class="bob" style="transform-origin:50% 0"><path d="M400 122c-9 13-9 19-9 24a9 9 0 0 0 18 0c0-5 0-11-9-24zM462 136c-9 13-9 19-9 24a9 9 0 0 0 18 0c0-5 0-11-9-24zM516 118c-9 13-9 19-9 24a9 9 0 0 0 18 0c0-5 0-11-9-24z" fill="#A9CDD3"/></g>
+      <g data-v><circle cx="434" cy="186" r="38" fill="#F9DFD0"/><path d="M394 180a40 40 0 0 1 80 0c-10-14-26-18-40-18s-30 4-40 18z" fill="#211E1E"/><path d="M372 360V262c0-26 26-40 62-40s62 14 62 40v98z" fill="#E3283A"/><path d="M372 278l-74-36" stroke="#E3283A" stroke-width="28" stroke-linecap="round"/><path d="M496 278l74-36" stroke="#E3283A" stroke-width="28" stroke-linecap="round"/><circle cx="292" cy="238" r="16" fill="#F9DFD0"/><circle cx="576" cy="238" r="16" fill="#F9DFD0"/></g>
+      <rect x="240" y="306" width="400" height="54" fill="#2B2725"/><rect x="226" y="296" width="414" height="16" rx="4" fill="#B98A5E"/>
+    </svg>
+    <div class="vz-c">
+      <p class="vz-t">Ночью смена другая. Кондиционер сломан.</p>
+      <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-chat"/></svg></span><span>Вот тут и нужна одна фраза.</span></div>
+    </div>
+  </figure>
   <div class="grid g4">
     <div class="card rv"><div class="badge"><svg class="ic"><use href="#i-pass"/></svg></div><h3 style="margin-top:20px">Заселение</h3><div class="ex"><button type="button" class="say" data-say="Rezervasyonum var." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</p><p class="ru">У меня есть бронь.</p></div></div></div>
     <div class="card rv"><div class="badge"><svg class="ic"><use href="#i-sea"/></svg></div><h3 style="margin-top:20px">Вид на море</h3><div class="ex"><button type="button" class="say" data-say="Deniz manzaralı bir oda istiyorum." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Deniz <b class="rt">manzara</b><i class="a1">lı</i> bir oda <b class="rt">ist</b><i class="a1">iyor</i><i class="a2">um</i>.</p><p class="ru">Хочу номер с видом на море.</p></div></div></div>
@@ -619,6 +692,27 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   <div class="sub">
     <h3 class="rv">Гласная выбирает хвост</h3>
     <p class="txt rv">У большинства хвостов четыре варианта. Ты не выбираешь. <b>Выбирает последняя гласная слова.</b> Твоя задача только посмотреть на неё.</p>
+    <figure class="vz pl" data-vz>
+      <svg class="vz-a" viewBox="0 0 640 330" role="img" aria-label="Стойка с ключами: четыре крючка, на каждом ключ со своей парой гласных">
+        <rect width="640" height="330" fill="#B98A5E"/>
+        <path d="M70 0v330M216 0v330M362 0v330M508 0v330" stroke="#A97A4F" stroke-width="3"/>
+        <rect x="24" y="22" width="592" height="16" rx="6" fill="#2B2725"/>
+        <g font-family="Manrope,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central">
+          <g data-v><circle cx="96" cy="66" r="9" fill="#F6F1EB"/><rect x="42" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="96" y="130" font-size="30" fill="#6A6462">a ı</text><path d="M96 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M86 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="216" r="28" fill="#E3283A"/><text x="96" y="216" font-size="34" fill="#fff">ı</text></g>
+          <g data-v><circle cx="242" cy="66" r="9" fill="#F6F1EB"/><rect x="188" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="242" y="130" font-size="30" fill="#6A6462">e i</text><path d="M242 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M232 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="242" cy="216" r="28" fill="#E3283A"/><text x="242" y="216" font-size="34" fill="#fff">i</text></g>
+          <g data-v><circle cx="388" cy="66" r="9" fill="#F6F1EB"/><rect x="334" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="388" y="130" font-size="30" fill="#6A6462">o u</text><path d="M388 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M378 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="388" cy="216" r="28" fill="#E3283A"/><text x="388" y="216" font-size="34" fill="#fff">u</text></g>
+          <g data-v><circle cx="534" cy="66" r="9" fill="#F6F1EB"/><rect x="480" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="534" y="130" font-size="30" fill="#6A6462">ö ü</text><path d="M534 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M524 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="534" cy="216" r="28" fill="#E3283A"/><text x="534" y="216" font-size="34" fill="#fff">ü</text></g>
+        </g>
+        <rect y="282" width="640" height="48" fill="#2B2725"/><g fill="#C9A45C"><rect x="96" y="298" width="150" height="10" rx="5"/><rect x="396" y="298" width="150" height="10" rx="5"/></g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Вся гармония на четырёх крючках</p>
+        <div class="vz-r"><span class="vz-k">a ı</span><span><span class="tr-i" lang="tr"><b class="rt">anahtar</b><i class="a1">ım</i></span> мой ключ</span></div>
+        <div class="vz-r"><span class="vz-k">e i</span><span><span class="tr-i" lang="tr"><b class="rt">bilet</b><i class="a1">im</i></span> мой билет</span></div>
+        <div class="vz-r"><span class="vz-k">o u</span><span><span class="tr-i" lang="tr"><b class="rt">pasaport</b><i class="a1">um</i></span> мой паспорт</span></div>
+        <div class="vz-r"><span class="vz-k">ö ü</span><span><span class="tr-i" lang="tr"><b class="rt">şoför</b><i class="a1">üm</i></span> мой водитель</span></div>
+      </div>
+    </figure>
     <div class="scene" data-scene="harmony" data-n="5"><div class="stage">
       <div class="vis">
         <div class="opts"><span class="opt">ım</span><span class="opt">im</span><span class="opt">um</span><span class="opt">üm</span></div>
@@ -645,6 +739,36 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
       <div class="tog" id="pkS" role="group" aria-label="Хвост"></div>
       <div class="res"><button type="button" class="say" id="pkSay" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><span class="big" id="pkR" lang="tr"></span><p id="pkN"></p></div>
     </div>
+    <figure class="vz pl" data-vz>
+      <div class="vz-o">
+        <svg class="vz-a" viewBox="0 0 640 400" role="img" aria-label="Тележка продавца фисташек, на лотке орехи с буквами f s t k ç ş h p">
+          <rect width="640" height="400" fill="#F6F1EB"/>
+          <rect y="342" width="640" height="58" fill="#E7DCCF"/>
+          <g fill="#2B2725"><circle cx="196" cy="350" r="24"/><circle cx="448" cy="350" r="24"/></g>
+          <rect x="120" y="172" width="404" height="166" rx="12" fill="#B98A5E"/>
+          <rect x="120" y="172" width="404" height="20" rx="6" fill="#A97A4F"/>
+          <path d="M136 92h372v80H136z" fill="#fff"/><path d="M136 92h46v80h-46zM228 92h46v80h-46zM320 92h46v80h-46zM412 92h46v80h-46z" fill="#E3283A"/>
+          <path d="M168 92v-46M476 92v-46" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/>
+          <rect x="130" y="24" width="384" height="44" rx="10" fill="#E3283A"/>
+          <g font-family="Manrope,sans-serif" font-weight="800" font-size="32" text-anchor="middle" dominant-baseline="central" fill="#211E1E">
+            <g data-v><ellipse cx="172" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="172" y="238">f</text></g>
+            <g data-v><ellipse cx="270" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="270" y="238">s</text></g>
+            <g data-v><ellipse cx="368" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="368" y="238">t</text></g>
+            <g data-v><ellipse cx="466" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="466" y="238">k</text></g>
+            <g data-v><ellipse cx="172" cy="306" rx="40" ry="33" fill="#D3DEAD"/><text x="172" y="306">ç</text></g>
+            <g data-v><ellipse cx="270" cy="306" rx="40" ry="33" fill="#D3DEAD"/><text x="270" y="306">ş</text></g>
+            <g data-v><ellipse cx="368" cy="306" rx="40" ry="33" fill="#D3DEAD"/><text x="368" y="306">h</text></g>
+            <g data-v><ellipse cx="466" cy="306" rx="40" ry="33" fill="#D3DEAD"/><text x="466" y="306">p</text></g>
+          </g>
+        </svg>
+        <span class="ov w" style="left:50%;top:11.500%" lang="tr">Fıstıkçı Şahap</span>
+      </div>
+      <div class="vz-c">
+        <p class="vz-t">Глухая упрямая</p>
+        <div class="vz-r"><span class="vz-k" lang="tr">-ta</span><span>На этих буквах хвост глохнет: <span class="tr-i" lang="tr"><b class="rt">kat</b><i class="a1">ta</i></span></span></div>
+        <div class="vz-r"><span class="vz-k" lang="tr">-de</span><span>На остальных как всегда: <span class="tr-i" lang="tr"><b class="rt">otel</b><i class="a1">de</i></span></span></div>
+      </div>
+    </figure>
     <div class="grid g2">
       <div class="card rv"><h3><span lang="tr">-da, -de</span>: где</h3><p>После a, ı, o, u будет <b>-da</b>. После e, i, ö, ü будет <b>-de</b>.</p><div class="ex"><button type="button" class="say" data-say="resepsiyonda" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">resepsiyon</b><i class="a1">da</i></p><p class="ru">на ресепшене</p></div></div><div class="ex"><button type="button" class="say" data-say="otelde" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">otel</b><i class="a1">de</i></p><p class="ru">в отеле</p></div></div></div>
       <div class="card rv"><h3>Глухая упрямая</h3><p>Если слово кончается на f, s, t, k, ç, ş, h, p, хвост тоже глохнет: <b>-ta, -te</b>. Эти буквы турки прячут в фразе <span class="tr-i" lang="tr">Fıstıkçı Şahap</span>: продавец фисташек Шахап.</p><div class="ex"><button type="button" class="say" data-say="Üçüncü katta." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Üçüncü <b class="rt">kat</b><i class="a1">ta</i>.</p><p class="ru">На третьем этаже.</p></div></div></div>
@@ -668,6 +792,25 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
         <div class="cap"><h3>Кровать</h3>k становится ğ. Эта буква почти не слышна, только тянет соседнюю гласную.<div class="ex"><button type="button" class="say" data-say="Bir çocuk yatağı istiyoruz." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Bir çocuk <b class="rt">yatağ</b><i class="a1">ı</i> <b class="rt">ist</b><i class="a1">iyor</i><i class="a2">uz</i>.</p><p class="ru">Нам нужна детская кроватка.</p></div></div></div>
       </div>
     </div></div>
+    <figure class="vz" data-vz>
+      <svg class="vz-a" viewBox="0 0 640 300" role="img" aria-label="Четыре предмета и как меняется буква: счёт, лекарство, шаги, кровать">
+        <rect width="640" height="300" fill="#F6F1EB"/>
+        <path d="M160 0v300M320 0v300M480 0v300" stroke="#fff" stroke-width="5"/>
+        <g font-family="Manrope,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central" font-size="34" fill="#E3283A">
+          <g data-v><path d="M54 62h52v112l-10-8-8 8-8-8-8 8-8-8-10 8z" fill="#fff"/><path d="M64 88h32M64 108h32M64 128h22" stroke="#D8D1CB" stroke-width="6" stroke-linecap="round"/><text x="80" y="232">p → b</text></g>
+          <g data-v><rect x="222" y="60" width="56" height="26" rx="6" fill="#2B2725"/><rect x="214" y="86" width="72" height="88" rx="14" fill="#E3283A"/><path d="M250 108v44M228 130h44" stroke="#fff" stroke-width="9" stroke-linecap="round"/><text x="250" y="232">ç → c</text></g>
+          <g data-v><g fill="#2B2725"><ellipse cx="396" cy="128" rx="19" ry="28" transform="rotate(-14 396 128)"/><ellipse cx="402" cy="172" rx="13" ry="10"/><ellipse cx="444" cy="94" rx="19" ry="28" transform="rotate(14 444 94)"/><ellipse cx="436" cy="138" rx="13" ry="10"/></g><text x="420" y="232">t → d</text></g>
+          <g data-v><rect x="510" y="108" width="110" height="60" rx="16" fill="#fff"/><rect x="510" y="90" width="44" height="34" rx="12" fill="#F9DFD0"/><rect x="510" y="150" width="110" height="24" rx="8" fill="#E3283A"/><path d="M518 174v16M612 174v16" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/><text x="565" y="232">k → ğ</text></g>
+        </g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Подошла гласная, и всё</p>
+        <div class="vz-r"><span class="vz-k" lang="tr">p</span><span><span class="tr-i" lang="tr"><b class="rt">hesab</b><i class="a1">ı</i></span> счёт</span></div>
+        <div class="vz-r"><span class="vz-k" lang="tr">ç</span><span><span class="tr-i" lang="tr"><b class="rt">ilac</b><i class="a1">ı</i></span> лекарство</span></div>
+        <div class="vz-r"><span class="vz-k" lang="tr">t</span><span><span class="tr-i" lang="tr"><b class="rt">gid</b><i class="a1">iyor</i></span> идти</span></div>
+        <div class="vz-r"><span class="vz-k" lang="tr">k</span><span><span class="tr-i" lang="tr"><b class="rt">yatağ</b><i class="a1">ı</i></span> кровать</span></div>
+      </div>
+    </figure>
     <div class="q card mini rv" data-mini="1" style="margin-top:18px"></div>
   </div>
 
@@ -690,6 +833,22 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
       <div class="pk" id="vbP"></div>
       <div id="vbR"></div>
     </div>
+    <figure class="vz" data-vz style="margin-top:16px">
+      <svg class="vz-a" viewBox="0 0 640 340" role="img" aria-label="Полка в номере: подушка, стопка полотенец, фен и ключ">
+        <rect width="640" height="340" fill="#F6F1EB"/>
+        <rect x="24" y="268" width="592" height="24" rx="6" fill="#B98A5E"/><path d="M90 292l-20 48M550 292l20 48" stroke="#A97A4F" stroke-width="14"/>
+        <g data-v><rect x="46" y="166" width="170" height="102" rx="34" fill="#fff"/><path d="M60 172c10 20 10 72 0 90M202 172c-10 20-10 72 0 90" fill="none" stroke="#E7DCCF" stroke-width="3"/></g>
+        <g data-v><rect x="236" y="240" width="140" height="28" rx="6" fill="#E3283A"/><rect x="244" y="212" width="124" height="28" rx="6" fill="#F9DFD0"/><rect x="236" y="184" width="140" height="28" rx="6" fill="#E3283A"/><rect x="244" y="156" width="124" height="28" rx="6" fill="#F9DFD0"/><path d="M300 156v112" stroke="#fff" stroke-width="4"/></g>
+        <g data-v><g transform="rotate(-20 500 180)"><rect x="412" y="150" width="124" height="60" rx="26" fill="#2B2725"/><rect x="530" y="164" width="44" height="32" rx="6" fill="#2B2725"/><rect x="452" y="206" width="30" height="76" rx="12" fill="#2B2725"/><circle cx="446" cy="180" r="10" fill="#E3283A"/></g></g>
+        <g data-v><path d="M306 10v28" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/><g stroke="#C9A45C" stroke-width="12" fill="none" stroke-linecap="round"><circle cx="306" cy="60" r="20"/><path d="M306 80v56M306 108h20M306 128h14"/></g></g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Что можно попросить</p>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-plus"/></svg></span><span><span class="tr-i" lang="tr">Bir yastık daha <b class="rt">al</b><i class="a1">abil</i><i class="a2">ir</i> <i class="a1">mi</i><i class="a2">yim</i>?</span></span></div>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-towel"/></svg></span><span><span class="tr-i" lang="tr">Bir havlu daha <b class="rt">getir</b><i class="a1">ir</i> <i class="a1">mi</i><i class="a2">siniz</i>?</span></span></div>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-dryer"/></svg></span><span><span class="tr-i" lang="tr">Saç kurutma <b class="rt">makine</b><i class="a1">si</i> <b class="rt">çalış</b><i class="a1">mıyor</i>.</span></span></div>
+      </div>
+    </figure>
     <div class="card rv" style="margin-top:16px">
       <h3>Градус вежливости</h3>
       <p>Одна просьба, три тона. Двигай ползунок.</p>
@@ -726,6 +885,25 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     </div></div>
   </div>
 
+    <figure class="vz" data-vz style="margin-top:44px">
+      <div class="vz-o">
+        <svg class="vz-a" viewBox="0 0 640 280" role="img" aria-label="Лента с чемоданами: вещь, потом действие, глагол хочу приезжает последним">
+          <rect width="640" height="280" fill="#F6F1EB"/>
+          <rect y="212" width="640" height="68" fill="#2B2725"/>
+          <g fill="#D8D1CB"><circle cx="70" cy="246" r="16"/><circle cx="210" cy="246" r="16"/><circle cx="350" cy="246" r="16"/><circle cx="490" cy="246" r="16"/><circle cx="600" cy="246" r="16"/></g>
+          <g data-v><rect x="20" y="104" width="138" height="108" rx="14" fill="#F9DFD0"/><rect x="66" y="80" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
+          <g data-v><rect x="176" y="104" width="212" height="108" rx="14" fill="#A9CDD3"/><rect x="258" y="80" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
+          <g data-v class="bob" style="transform-origin:50% 100%"><rect x="406" y="86" width="214" height="126" rx="14" fill="#E3283A"/><rect x="490" y="62" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
+        </svg>
+        <span class="ov" style="left:13.900%;top:57%" lang="tr">Odamı</span>
+        <span class="ov" style="left:44%;top:57%" lang="tr">değiştirmek</span>
+        <span class="ov w" style="left:80.200%;top:53.500%" lang="tr">istiyorum</span>
+      </div>
+      <div class="vz-c">
+        <p class="vz-t">"Хочу" приезжает последним</p>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-bag"/></svg></span><span><span class="tr-i" lang="tr"><b class="rt">Oda</b><i class="a1">m</i><i class="a2">ı</i> <b class="rt">değiştir</b><i class="a1">mek</i> <b class="rt">ist</b><i class="a1">iyor</i><i class="a2">um</i>.</span> Я хочу поменять номер.</span></div>
+      </div>
+    </figure>
   <div class="sub">
     <h3 class="rv">Вчера, сегодня, завтра</h3>
     <p class="txt rv">Отпуск это три времени. Приехали, живём, уезжаем. Больше на ресепшене почти не нужно.</p>
@@ -740,6 +918,22 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
       </div>
     </div></div>
     <div class="q card mini rv" data-mini="2" style="margin-top:18px"></div>
+    <figure class="vz" data-vz>
+      <svg class="vz-a" viewBox="0 0 660 300" role="img" aria-label="Три панели: приехали с чемоданом, живём у моря, уезжаем с чемоданом">
+        <rect x="0" width="212" height="300" fill="#E7DCCF"/><rect x="224" width="212" height="300" fill="#A9CDD3"/><rect x="448" width="212" height="300" fill="#F9DFD0"/>
+        <g font-family="Manrope,sans-serif" font-weight="800" font-size="30" text-anchor="middle" dominant-baseline="central"><text x="34" y="36" fill="#E3283A">1</text><text x="258" y="36" fill="#E3283A">2</text><text x="482" y="36" fill="#E3283A">3</text></g>
+        <g data-v><path d="M30 100l62-24 58 30-18 16-44-10-20 26-18-8 4-26-24-4z" fill="#fff"/><rect x="58" y="176" width="96" height="86" rx="10" fill="#E3283A"/><rect x="88" y="150" width="36" height="26" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/><path d="M58 208h96" stroke="#BE1A2B" stroke-width="6"/></g>
+        <g data-v><circle cx="372" cy="62" r="30" fill="#F9DFD0"/><path d="M224 196c28-16 52-16 80 0s52 16 80 0 44-12 52-6v110H224z" fill="#fff" opacity=".85"/><path d="M262 232h110l26 38H288z" fill="#E3283A"/><path d="M262 232l-16-58" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/></g>
+        <g data-v><path d="M582 300V112a10 10 0 0 1 10-10h68v198z" fill="#fff"/><circle cx="600" cy="200" r="7" fill="#C9A45C"/><rect x="474" y="190" width="86" height="76" rx="10" fill="#E3283A"/><rect x="500" y="166" width="34" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/><path d="M506 124h44M534 110l18 14-18 14" fill="none" stroke="#E3283A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Приехали, живём, уезжаем</p>
+        <div class="vz-r"><span class="vz-k">1</span><span><span class="tr-i" lang="tr">Dün <b class="rt">gel</b><i class="a1">di</i><i class="a2">k</i>.</span></span></div>
+        <div class="vz-r"><span class="vz-k">2</span><span><span class="tr-i" lang="tr">Bu <b class="rt">otel</b><i class="a1">de</i> <b class="rt">kal</b><i class="a1">ıyor</i><i class="a2">uz</i>.</span></span></div>
+        <div class="vz-r"><span class="vz-k">3</span><span><span class="tr-i" lang="tr">Yarın <b class="rt">çık</b><i class="a1">acağ</i><i class="a2">ız</i>.</span></span></div>
+      </div>
+    </figure>
+
   </div>
 </div></section>
 
@@ -758,6 +952,21 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <div class="card rv"><h3>Слова с характером</h3><p>saat и alkol звучат твёрдо, а хвост берут мягкий. Просто запомни.</p><div class="ex"><button type="button" class="say" data-say="Çıkış saati kaç?" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Çıkış <b class="rt">saat</b><i class="a1">i</i> kaç?</p><p class="ru">Какое время выезда?</p></div></div><div class="ex"><button type="button" class="say" data-say="Alkolsüz içecek var mı?" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Alkol</b><i class="a1">süz</i> içecek var <i class="a1">mı</i>?</p><p class="ru">Есть безалкогольные напитки?</p></div></div></div>
     <div class="card rv"><h3>Bey и Hanım</h3><p>Ставятся <b>после имени</b>, не после фамилии. И не после слова "бронь". Я проверял.</p><div class="ex"><button type="button" class="say" data-say="Günaydın, Ayşe Hanım!" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Günaydın, Ayşe Hanım!</p><p class="ru">Доброе утро, госпожа Айше!</p></div></div></div>
   </div>
+  <figure class="vz pl" data-vz>
+    <svg class="vz-a" viewBox="0 0 640 260" role="img" aria-label="Гласная встретила гласную: между ними вставлена прокладка y, получается odayı">
+      <rect width="640" height="260" fill="#F6F1EB"/>
+      <g font-family="Manrope,sans-serif" font-weight="800" font-size="64" text-anchor="middle" dominant-baseline="central">
+        <g data-v><rect x="46" y="96" width="216" height="118" rx="20" fill="#F9DFD0"/><text x="154" y="156" fill="#211E1E">oda</text></g>
+        <g data-v><rect x="402" y="96" width="140" height="118" rx="20" fill="#E3283A"/><text x="472" y="152" fill="#fff" font-size="92">ı</text></g>
+        <g class="bob"><path d="M284 46h72l-10 150h-52z" fill="#fff" stroke="#E3283A" stroke-width="6" stroke-linejoin="round"/><text x="320" y="120" fill="#E3283A">y</text></g>
+      </g>
+      <path d="M262 124l22-8M262 188l22 8M402 124l-22-8M402 188l-22 8" stroke="#E3283A" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+    <div class="vz-c">
+      <p class="vz-t">Гласная встретила гласную</p>
+      <div class="vz-r"><span class="vz-k">y</span><span><span class="tr-i" lang="tr"><b class="rt">Oda</b><i class="a1">yı</i> <b class="rt">değiştir</b><i class="a1">mek</i> <b class="rt">ist</b><i class="a1">iyor</i><i class="a2">um</i>.</span> Хочу поменять номер.</span></div>
+    </div>
+  </figure>
 </div></section>
 
 <section class="sec" id="dialog" data-floor data-name="Диалог" style="padding-top:20px"><div class="wrap">
@@ -766,6 +975,23 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   </div>
   <div class="chat" id="chat"></div>
   <div class="btns" style="justify-content:center"><button type="button" class="btn line" id="chatP"><svg class="ic"><use href="#i-sound"/></svg>Послушать весь</button></div>
+  <figure class="vz" data-vz>
+    <svg class="vz-a" viewBox="0 0 640 360" role="img" aria-label="Ресепшен: Айше за стойкой, гость с чемоданом, между ними реплики и звонок">
+      <rect width="640" height="360" fill="#F6F1EB"/>
+      <rect y="276" width="640" height="84" fill="#FBF8F4"/>
+      <g data-v><circle cx="168" cy="104" r="30" fill="#F9DFD0"/><path d="M136 104a32 32 0 0 1 64 0c-8-12-20-14-32-14s-24 2-32 14z" fill="#2B2725"/><path d="M116 276v-96c0-30 22-44 52-44s52 14 52 44v96z" fill="#E3283A"/></g>
+      <rect x="86" y="260" width="240" height="22" rx="4" fill="#2B2725"/><path d="M100 282h212v78H100z" fill="#B98A5E"/>
+      <g data-v><path d="M240 94h110a18 18 0 0 1 18 18v42a18 18 0 0 1-18 18h-70l-26 26 6-26h-20a18 18 0 0 1-18-18v-42a18 18 0 0 1 18-18z" fill="#fff"/><path d="M262 120h70M262 142h46" stroke="#D8D1CB" stroke-width="8" stroke-linecap="round"/></g>
+      <g data-v><circle cx="476" cy="104" r="30" fill="#F9DFD0"/><path d="M444 104a32 32 0 0 1 64 0c-8-16-20-20-32-20s-24 4-32 20z" fill="#94551F"/><path d="M424 276v-96c0-30 22-44 52-44s52 14 52 44v96z" fill="#A9CDD3"/><path d="M430 276v84h34v-84zM488 276v84h34v-84z" fill="#2B2725"/></g>
+      <g data-v><rect x="540" y="240" width="72" height="100" rx="10" fill="#E3283A"/><rect x="560" y="216" width="32" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
+      <g data-v><path d="M372 66h-58a14 14 0 0 0-14 14v34a14 14 0 0 0 14 14h12l-4 20 20-20h30a14 14 0 0 0 14-14V80a14 14 0 0 0-14-14z" fill="#E3283A" transform="translate(30 -26)"/></g>
+    </svg>
+    <div class="vz-c">
+      <p class="vz-t">Теперь всё по-настоящему</p>
+      <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-bell"/></svg></span><span><span class="tr-i" lang="tr">Hoş geldiniz!</span> Добро пожаловать!</span></div>
+      <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-case"/></svg></span><span><span class="tr-i" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</span> У меня есть бронь.</span></div>
+    </div>
+  </figure>
 </div></section>
 
 <section class="sec hall" id="quiz" data-floor data-name="Упражнения"><div class="wrap"><div class="box">
@@ -776,6 +1002,18 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 
 <section class="sec" id="sum" data-floor data-name="Итог"><div class="wrap">
   <div class="ctr rv"><h2>Итог. <em>Ключ на стойке</em></h2></div>
+  <figure class="vz" data-vz style="max-width:760px;margin:30px auto 0">
+    <svg class="vz-a" viewBox="0 0 640 320" role="img" aria-label="На стойке лежит ключ с красной биркой и стоит звонок">
+      <rect width="640" height="320" fill="#F6F1EB"/>
+      <rect y="216" width="640" height="104" fill="#2B2725"/><rect y="206" width="640" height="22" fill="#B98A5E"/>
+      <g data-v><path d="M430 206a62 62 0 0 1 124 0z" fill="#C9A45C"/><rect x="484" y="132" width="16" height="18" rx="5" fill="#A98440"/><rect x="416" y="200" width="152" height="14" rx="4" fill="#A98440"/></g>
+      <g data-v><g transform="rotate(-12 196 210)"><circle cx="118" cy="190" r="34" fill="none" stroke="#C9A45C" stroke-width="16"/><path d="M152 190h96M224 190v24M200 190v18" stroke="#C9A45C" stroke-width="16" stroke-linecap="round"/><rect x="260" y="160" width="96" height="60" rx="10" fill="#E3283A"/><text x="308" y="190" text-anchor="middle" dominant-baseline="central" font-family="Manrope,sans-serif" font-weight="800" font-size="32" fill="#fff">305</text></g></g>
+    </svg>
+    <div class="vz-c">
+      <p class="vz-t">Вещь, хвост, глагол. Ключ на стойке.</p>
+      <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#i-key"/></svg></span><span><span class="tr-i" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</span> У меня есть бронь.</span></div>
+    </div>
+  </figure>
   <div class="card rv" style="max-width:760px;margin:30px auto 0"><ul class="ck">
     <li><span class="num">1</span><div><b>Вещь первая, глагол последний</b><span class="d">"Хочу" и "можно" стоят в самом конце.</span></div></li>
     <li><span class="num">2</span><div><b>"У меня есть" это хвост и var</b><span class="d">Никакого ben.</span><div class="ex"><button type="button" class="say" data-say="Rezervasyonum var." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</p><p class="ru">У меня есть бронь.</p></div></div></div></li>
@@ -847,6 +1085,7 @@ function fitSov(){$$('.sov').forEach(function(r){r.style.fontSize='';var av=r.pa
 fitSov();
 
 var G=window.gsap&&window.ScrollTrigger&&!reduce&&innerHeight>=500?gsap:null;
+if(G)$$('[data-vz]').forEach(function(f){var ps=$$('[data-v]',f),ds=$$('[data-draw]',f);ds.forEach(function(d){d.setAttribute('pathLength','1')});once(f,function(){if(ps.length)G.fromTo(ps,{opacity:0,y:18,scale:.93},{opacity:1,y:0,scale:1,duration:.55,stagger:.1,ease:'back.out(1.4)',transformOrigin:'50% 50%',clearProps:'transform,opacity'});ds.forEach(function(d,i){G.fromTo(d,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.9,delay:.2+i*.14,ease:'power2.out',clearProps:'strokeDasharray,strokeDashoffset'})})},'0px 0px -14% 0px')});
 if(!G){D.documentElement.classList.add('static');var sh=$('#sovH');if(sh)sh.textContent='Как строит турок'}
 if(G){gsap.registerPlugin(ScrollTrigger);ScrollTrigger.config({ignoreMobileResize:true});
 $$('.scene').forEach(function(sc){var type=sc.getAttribute('data-scene'),n=+sc.getAttribute('data-n'),caps=$$('.cap',sc);sc.style.setProperty('--n',n);
