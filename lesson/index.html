@@ -1233,7 +1233,7 @@ if(cnt){
  /* таймер: личные сутки с первого открытия страницы */
  var KEY='otel-open',DAY=864e5,t0=Date.now();try{var sv=+localStorage.getItem(KEY);if(sv&&Date.now()-sv<DAY*2)t0=sv;else localStorage.setItem(KEY,String(t0))}catch(e){}
  function pad(n){return (n<10?'0':'')+n}
- function tickT(){var left=Math.max(0,t0+DAY-Date.now()),s=Math.floor(left/1e3),h=Math.floor(s/3600),m=Math.floor(s%3600/60),c=s%60;$('#tH').textContent=pad(h);$('#tM').textContent=pad(m);$('#tS').textContent=pad(c);$('#dockT').textContent=pad(h)+':'+pad(m)+':'+pad(c);if(left<=0){$('#tmT').textContent='Сутки прошли. Цена та же, $30. А вот шпаргалку лучше открыть ещё раз.';clearInterval(tmr)}}
+ function tickT(){var left=Math.max(0,t0+DAY-Date.now()),s=Math.floor(left/1e3),h=Math.floor(s/3600),m=Math.floor(s%3600/60),c=s%60;$('#tH').textContent=pad(h);$('#tM').textContent=pad(m);$('#tS').textContent=pad(c);$('#dockT').textContent=pad(h)+':'+pad(m)+':'+pad(c);if(left<=0){$('#tmT').textContent='Сутки прошли. Цена та же, 30 €. А вот шпаргалку лучше открыть ещё раз.';clearInterval(tmr)}}
  var tmr=setInterval(tickT,1e3);tickT();
  $$('video[data-lazy]').forEach(function(v){if(reduce){v.poster=v.getAttribute('data-poster');return}var loaded=false,o=new IntersectionObserver(function(es){var e=es[0];if(e.isIntersecting){if(!loaded){loaded=true;v.poster=v.getAttribute('data-poster');v.src=v.getAttribute('data-src')}var p=v.play();if(p&&p.catch)p.catch(function(){})}else if(loaded)v.pause()},{rootMargin:'200px 0px'});o.observe(v)});
 }
