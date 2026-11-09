@@ -479,6 +479,24 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .vz-k .ic{width:20px;height:20px}
 .vz .bob{transform-box:fill-box;transform-origin:50% 0;animation:sway 5s ease-in-out infinite}
 @media(min-width:700px){.vz{grid-template-columns:1.25fr 1fr;align-items:center;gap:32px;padding:22px}.vz.col{grid-template-columns:minmax(0,1fr)}.vz-c{padding:0}}
+
+/* удержание: чекпоинты и мост перед рекламой */
+.chkp{margin:clamp(34px,5vw,56px) 0;padding:20px 24px;border-radius:var(--r);background:var(--peach-2);display:grid;gap:10px;transition:background-color .22s}
+.chkp:hover{background:var(--peach)}
+.chkp-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.chkp-h b{font-weight:800;font-size:18px;line-height:1.3}
+.chkp-bar{flex:1 1 160px;height:8px;border-radius:99px;background:#fff;overflow:hidden}
+.chkp-bar i{display:block;height:100%;border-radius:99px;background:var(--red)}
+.chkp p{margin:0;font-size:16px;line-height:1.5}
+.brg{padding-bottom:0}
+.brg-g{display:grid;grid-template-columns:minmax(0,454px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end}
+.brg-ph{display:block;width:100%;height:auto}
+.brg-t{align-self:center;padding-bottom:clamp(44px,6vw,84px)}
+.brg-l{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.brg-l li{display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.5}
+.brg-l .ic{flex:none;margin-top:3px;color:var(--red)}
+
+@media (max-width:760px){.brg-g{grid-template-columns:minmax(0,1fr);gap:0}.brg-ph{width:min(100%,320px);margin-inline:auto}.brg-t{border-top:1px solid var(--line);padding-top:30px}}
 </style>
 
 </head>
@@ -561,6 +579,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   <div class="story-h rv">
     <h2>Бронь <em>это я</em></h2>
     <p class="lead">Короткая история о том, как две буквы и одно слово могут поменять человеку имя.</p>
+    <p class="lead">На <span class="tr-i" lang="tr">Hoş geldiniz</span> отвечают одной фразой. Я её тогда не знал. <b>Какой</b>, станет ясно, когда заселимся по-настоящему.</p>
     <div class="envlp"><span class="kc">305</span><div><b lang="tr">Rezervasyon Bey</b><small>Так было написано на конверте с ключом</small></div></div>
   </div>
   <div class="rv">
@@ -775,6 +794,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     </div>
   </div>
 
+  <div class="chkp"><div class="chkp-h"><b>Больше трети позади</b><span class="chkp-bar" aria-hidden="true"><i style="width:37%"></i></span></div><p>Дальше узнаешь, почему <span class="tr-i" lang="tr">hesap</span> становится <span class="tr-i" lang="tr">hesabı</span>. А следом формула, которой просят подушку.</p></div>
   <div class="sub">
     <h3 class="rv">Согласная размякает</h3>
     <p class="txt rv">Четыре согласные на конце слова держатся, пока к ним не подойдёт гласная. <b>Подошла, и всё.</b> Как ты при слове "скидка".</p>
@@ -940,7 +960,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 <section class="sec hall" id="traps" data-floor data-name="Где ошибаются"><div class="wrap"><div class="box">
   <div class="ctr rv"><h2>Где ошибаются <em>русскоязычные</em></h2><p class="lead">Восемь ошибок. Каждая звучит нормально в голове и странно на стойке. Переверни и проверь.</p></div>
   <div class="grid g4" id="flips"></div>
-</div></div></section>
+</div><div class="chkp"><div class="chkp-h"><b>Больше двух третей позади</b><span class="chkp-bar" aria-hidden="true"><i style="width:71%"></i></span></div><p>Дальше шесть исключений. Потом заселяемся по-настоящему, и там ответ на <span class="tr-i" lang="tr">Hoş geldiniz</span>.</p></div></div></section>
 
 <section class="sec" id="except" data-floor data-name="Исключения"><div class="wrap">
   <div class="rv"><h2>Исключения. <em>Куда без них</em></h2><p class="lead">Правила выше работают почти везде. Почти это вот эти шесть случаев.</p></div>
@@ -1026,6 +1046,19 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 </div></section>
 </main>
 
+
+<section class="sec brg"><div class="wrap brg-g">
+  <img class="brg-ph" src="media/ph-bridge.webp" alt="" width="331" height="359" loading="lazy">
+  <div class="brg-t">
+    <h2>На <span lang="tr">Hoş geldiniz</span> отвечают <em lang="tr">Hoş bulduk</em></h2>
+    <ul class="brg-l">
+      <li><svg class="ic"><use href="#i-check"/></svg><span>Скажешь <span class="tr-i" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</span> Господин Бронь остаётся в истории.</span></li>
+      <li><svg class="ic"><use href="#i-check"/></svg><span>Попросишь подушку формулой: <span class="tr-i" lang="tr">Bir yastık daha <b class="rt">al</b><i class="a1">abil</i><i class="a2">ir</i> <i class="a1">mi</i><i class="a2">yim</i>?</span></span></li>
+    </ul>
+    <p class="lead">Ресепшн пройден. Остальной турецкий на платформе: 128 гайдов по грамматике и 131 блок лексики. <b>$30 один раз.</b></p>
+    <div class="btns"><a class="btn" href="#buy">Посмотреть цену</a></div>
+  </div>
+</div></section>
 
 <section class="sec red" id="ad" data-floor data-name="Платформа"><div class="wrap">
   <h2 class="rv">Это был один этаж</h2>
