@@ -8,56 +8,80 @@
 <meta property="og:title" content="Турецкий на ресепшене: заселиться и не стать господином Бронью">
 <meta property="og:description" content="Гайд по турецкому для отеля: бронь, просьбы, жалобы, хвосты слов. Анимации, озвучка, 10 упражнений.">
 <meta property="og:image" content="../media/og.jpg">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#FDFCFC">
 <link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="../assets/fonts/forum-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <style>@font-face {
-  font-family: 'Forum';
+  font-family: 'Geist';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300 600;
   font-display: swap;
-  src: url(../assets/fonts/forum-cyrillic.woff2) format('woff2');
+  src: url(../assets/fonts/geist-cyrillic.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 @font-face {
-  font-family: 'Forum';
+  font-family: 'Geist';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300 600;
   font-display: swap;
-  src: url(../assets/fonts/forum-latin-ext.woff2) format('woff2');
+  src: url(../assets/fonts/geist-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
-  font-family: 'Forum';
+  font-family: 'Geist';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300 600;
   font-display: swap;
-  src: url(../assets/fonts/forum-latin.woff2) format('woff2');
+  src: url(../assets/fonts/geist-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Geist Mono';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 400 500;
   font-display: swap;
-  src: url(../assets/fonts/manrope-cyrillic.woff2) format('woff2');
+  src: url(../assets/fonts/geistmono-cyrillic.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Geist Mono';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 400 500;
   font-display: swap;
-  src: url(../assets/fonts/manrope-latin-ext.woff2) format('woff2');
+  src: url(../assets/fonts/geistmono-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Geist Mono';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 400 500;
   font-display: swap;
-  src: url(../assets/fonts/manrope-latin.woff2) format('woff2');
+  src: url(../assets/fonts/geistmono-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../assets/fonts/inter-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../assets/fonts/inter-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../assets/fonts/inter-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
@@ -67,7 +91,7 @@
 :root{--red:#E3283A;--red-d:#BE1A2B;--peach:#F9DFD0;--peach-2:#FCEFE7;--ink:#211E1E;--mute:#6A6462;--line:#E8E2DD;--dot:#D8D1CB;--soft:#F7F4F1;--wall:#F6F1EB;--sand:#E7DCCF;--cop:#94551F;--good:#2E7D5B;--r:24px;--sh:0 18px 48px rgba(52,38,32,.08);--sh2:0 24px 60px rgba(52,38,32,.14)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
-body{margin:0;background:#fff;color:var(--ink);font:500 16px/1.6 Manrope,system-ui,sans-serif;overflow-x:clip;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3;overflow-wrap:normal}
+body{margin:0;background:#fff;color:var(--ink);font:500 16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3;overflow-wrap:normal}
 h1,h2,h3,p,ul,figure{margin:0;padding:0}
 ul{list-style:none}
 img,video,svg{display:block;max-width:100%}
@@ -80,7 +104,7 @@ input{font:inherit}
 .ic{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
 .sec{position:relative;padding:76px 0;scroll-margin-top:70px}
-h1,h2,h3,.fx{font-family:Forum,Georgia,serif;font-weight:400;letter-spacing:-.005em;text-wrap:balance}
+h1,h2,h3,.fx{font-family:Geist,Georgia,serif;font-weight:400;letter-spacing:-.005em;text-wrap:balance}
 h1{font-size:clamp(50px,14vw,104px);line-height:1}
 h2{font-size:clamp(40px,10.4vw,68px);line-height:1.04}
 h3{font-size:clamp(28px,7vw,38px);line-height:1.12}
@@ -105,7 +129,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 #prog{position:fixed;left:0;right:0;top:0;height:3px;background:var(--red);transform-origin:0 50%;transform:scaleX(0);z-index:60}
 .hd{position:fixed;left:50%;translate:-50% 0;top:12px;width:calc(100% - 24px);max-width:1140px;z-index:50}
 .hd-in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;padding:6px 8px 6px 18px;background:#fff;border-radius:999px;border:1px dashed var(--dot);box-shadow:0 8px 28px rgba(52,38,32,.09)}
-.brand{display:inline-flex;align-items:center;gap:12px;font:400 22px/1 Forum,serif;transition:color .2s}
+.brand{display:inline-flex;align-items:center;gap:12px;font:400 22px/1 Geist,serif;transition:color .2s}
 .brand:hover{color:var(--red)}
 .brand .ic{color:var(--red);width:22px;height:22px}
 .nav{display:none}
@@ -120,13 +144,13 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .sheet{position:absolute;right:12px;left:12px;top:12px;max-width:420px;margin-left:auto;background:#fff;border-radius:var(--r);padding:16px;box-shadow:var(--sh2);max-height:calc(100dvh - 24px);overflow-y:auto;translate:0 -14px;transition:translate .28s}
 .menu.on .sheet{translate:0 0}
 .sheet-h{display:flex;align-items:center;justify-content:space-between;padding:0 4px 8px}
-.sheet-h b{font:400 26px/1 Forum,serif}
+.sheet-h b{font:400 26px/1 Geist,serif}
 .x{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--peach-2);transition:background-color .2s}
 .x:hover{background:var(--peach)}
 .flr a{display:flex;align-items:center;gap:14px;padding:10px;border-radius:14px;font-weight:700;transition:background-color .2s,color .2s}
 .flr a:hover{background:var(--peach-2);color:var(--red)}
 .flr a.cur{color:var(--red)}
-.flr span{display:grid;place-items:center;width:36px;height:36px;flex:none;border-radius:50%;background:var(--peach-2);color:var(--red);font:800 13px/1 Manrope,sans-serif}
+.flr span{display:grid;place-items:center;width:36px;height:36px;flex:none;border-radius:50%;background:var(--peach-2);color:var(--red);font:800 13px/1 Inter,sans-serif}
 /* карточки */
 .card{position:relative;color:var(--ink);background:#fff;border-radius:var(--r);padding:26px 22px;box-shadow:var(--sh);transition:translate .25s,box-shadow .25s}
 .card::after{content:"";position:absolute;inset:8px;border:1px dotted var(--dot);border-radius:17px;pointer-events:none}
@@ -142,7 +166,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .st{position:absolute;color:#F1EDE9;width:90px;height:90px;pointer-events:none}
 .badge{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--peach);color:var(--red);box-shadow:0 0 0 8px var(--peach-2)}
 .badge .ic{width:26px;height:26px}
-.num{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--peach);color:var(--red);font:800 16px/1 Manrope,sans-serif;text-align:center}
+.num{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--peach);color:var(--red);font:800 16px/1 Inter,sans-serif;text-align:center}
 /* турецкий */
 .rt{font-weight:800;background:var(--peach);border-radius:4px;padding:0 1px;color:var(--ink)}
 .a1,.a2,.a3{font-style:normal;font-weight:800}
@@ -181,11 +205,11 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 /* история */
 .story{display:grid;gap:30px}
 .line{margin-top:13px;font-size:18px;line-height:1.5;color:#3c3735;text-wrap:pretty}
-.line.big{font:400 clamp(30px,8vw,44px)/1.12 Forum,serif;color:var(--ink);margin-top:28px}
+.line.big{font:400 clamp(30px,8vw,44px)/1.12 Geist,serif;color:var(--ink);margin-top:28px}
 .envlp{background:var(--peach-2);border-radius:var(--r);padding:26px;margin-top:22px;display:flex;align-items:center;gap:18px;transition:background-color .25s,translate .25s}
 .envlp:hover{background:var(--peach);translate:0 -3px}
-.envlp .kc{flex:none;width:72px;height:96px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;font:800 15px/1 Manrope,sans-serif;rotate:-6deg;box-shadow:inset 0 -5px 0 var(--red-d)}
-.envlp b{font:400 28px/1.1 Forum,serif;display:block}
+.envlp .kc{flex:none;width:72px;height:96px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;font:800 15px/1 Inter,sans-serif;rotate:-6deg;box-shadow:inset 0 -5px 0 var(--red-d)}
+.envlp b{font:400 28px/1.1 Geist,serif;display:block}
 .envlp small{color:var(--mute);font-size:14px}
 /* сцены */
 .scene{position:relative;height:calc(100svh + var(--n,3)*50vh);margin-top:26px}
@@ -305,7 +329,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 /* упражнения */
 .qz{display:grid;gap:18px;margin-top:30px}
 .q{scroll-margin-top:80px}
-.q .ask{font:400 25px/1.2 Forum,serif;color:var(--ink);margin:0}
+.q .ask{font:400 25px/1.2 Geist,serif;color:var(--ink);margin:0}
 .q .hint{font-size:14px;color:var(--mute);margin-top:6px}
 .op-s{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .ch{min-height:50px;padding:6px 16px;border-radius:15px;background:var(--soft);font-size:16px;font-weight:700;line-height:1.25;text-align:center;transition:background-color .2s,color .2s}
@@ -329,7 +353,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .fb b{color:var(--ink)}
 .fb .ex{background:#fff}
 .score{margin-top:22px}
-.score b{font:400 58px/1 Forum,serif;color:var(--red)}
+.score b{font:400 58px/1 Geist,serif;color:var(--red)}
 .mt{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
 .mt .ch{width:100%}
 /* шпаргалка */
@@ -347,7 +371,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .pain h3{font-size:30px;margin-bottom:6px}
 .cnt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}
 .cn{padding:22px 14px;text-align:center}
-.cn .v{display:block;font:400 clamp(44px,12vw,68px)/1 Forum,serif;color:var(--red);text-align:center}
+.cn .v{display:block;font:400 clamp(44px,12vw,68px)/1 Geist,serif;color:var(--red);text-align:center}
 .cn b{display:block;margin-top:8px;font-size:14.5px;line-height:1.3}
 .cn p{font-size:13px;line-height:1.4;margin-top:6px}
 .cn.w2{grid-column:1/-1}
@@ -373,10 +397,10 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .fnd{margin-top:22px}
 .tm{display:flex;justify-content:center;gap:8px;margin-top:20px}
 .tm div{width:84px;padding:14px 4px;border-radius:16px;background:#fff;color:var(--red);text-align:center}
-.tm b{display:block;font:400 42px/1 Forum,serif;font-variant-numeric:tabular-nums;text-align:center}
+.tm b{display:block;font:400 42px/1 Geist,serif;font-variant-numeric:tabular-nums;text-align:center}
 .tm small{display:block;font-size:11.5px;font-weight:800;margin-top:6px;color:var(--mute)}
 .price{max-width:520px;margin:30px auto 0;text-align:center;padding:34px 22px}
-.price .pv{font:400 clamp(84px,24vw,128px)/1 Forum,serif;color:var(--red)}
+.price .pv{font:400 clamp(84px,24vw,128px)/1 Geist,serif;color:var(--red)}
 .price ul{text-align:left;margin:20px 0 24px}
 .price li{display:flex;gap:11px;align-items:flex-start;padding:7px 0;font-size:15.5px;line-height:1.35;font-weight:600}
 .price li .ic{color:var(--red);margin-top:1px}
@@ -472,7 +496,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .vz .ov{position:absolute;translate:-50% -50%;font-weight:800;font-size:clamp(13px,1.6vw,16px);line-height:1;white-space:nowrap;hyphens:none;color:var(--ink)}
 .vz .ov.w{color:#fff}
 .vz-c{display:grid;gap:10px;align-content:center;min-width:0;padding:0 4px 4px}
-.vz-t{font:400 clamp(26px,3vw,32px)/1.12 Forum,Georgia,serif;color:var(--ink);text-wrap:balance}
+.vz-t{font:400 clamp(26px,3vw,32px)/1.12 Geist,Georgia,serif;color:var(--ink);text-wrap:balance}
 .vz-r{display:flex;align-items:center;gap:12px;font-size:15px;line-height:1.4;color:var(--mute)}
 .vz-r .tr-i{font-size:16.5px;white-space:normal}
 .vz-k{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none;font-weight:800;font-size:15px;line-height:1;color:var(--red);background:var(--peach)}
@@ -497,6 +521,190 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
 .brg-l .ic{flex:none;margin-top:3px;color:var(--red)}
 
 @media (max-width:760px){.brg-g{grid-template-columns:minmax(0,1fr);gap:0}.brg-ph{width:min(100%,320px);margin-inline:auto}.brg-t{border-top:1px solid var(--line);padding-top:30px}}
+</style>
+<style>/* Стиль в духе elevenlabs.io: тёплый белый, чёрный, светло-серые карточки, тонкие линии сетки. Общий для turkce-otel и turkce-izafet. */
+:root{--red:#C8441F;--red-d:#A8371A;--peach:#F5F3F1;--peach-2:#FAF8F6;--ink:#0B0B0B;--mute:#777169;--line:#EBE8E4;--dot:#E0DCD6;--soft:#F5F3F1;--wall:#FDFCFC;--sand:#EDE6DD;--cop:#2D5BD8;--good:#1E7F52;--teal:#E4572E;--gold:#0B0B0B;--gold-d:#333;--pale:#F5F3F1;--o:#E4572E;--o2:#F6C8AE;--bl:#2D5BD8;--bl2:#C9D7F8;--vi:#7B4FC4;--vi2:#DCCFF7;--r:16px;--sh:none;--sh2:0 0 0 1px var(--line)}
+body{background:var(--wall);color:var(--ink);font:400 16.5px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3,.fx,.line.big,.cap h3,.q .ask,.tm b,.price .pv,.cn .v,.score b,.envlp b,.sheet-h b,.brand{font-family:Geist,Inter,system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.022em;color:var(--ink)}
+h1{font-size:clamp(38px,10vw,72px)!important;line-height:1.05!important}
+h2{font-size:clamp(30px,7.6vw,52px)!important;line-height:1.1!important}
+h3{font-size:clamp(22px,5.4vw,28px)!important;line-height:1.2!important}
+h1 b,h2 b,h3 b,h1 em,h2 em,h3 em{font-weight:400!important;color:inherit!important;font-style:normal}
+.lead{color:var(--ink);font-size:clamp(17px,4.2vw,19px)}
+.txt,.card p,.cap,.ru,.line{color:var(--mute)}
+.line{color:#3a3733}
+.line.big{font-size:clamp(28px,7vw,40px)!important;line-height:1.15}
+.txt b,.lead b,.cap b,.card p b,.line b{color:var(--ink);font-weight:600}
+.hl{color:var(--o)}
+/* шапка */
+#prog{background:var(--ink);height:2px}
+.hd{top:0;left:0;translate:none;width:100%;max-width:none}
+.hd-in{max-width:none;border:0;border-bottom:1px solid var(--line);border-radius:0;background:var(--wall);box-shadow:none;min-height:64px;padding:8px clamp(16px,3vw,32px)}
+.brand{font-size:21px!important;font-weight:500!important;gap:10px}
+.brand .ic{color:var(--ink)}
+.brand:hover{color:var(--mute)}
+.nav a{color:var(--ink);font-weight:400;font-size:14px;padding:9px 12px}
+.nav a:hover{background:var(--soft);color:var(--ink)}
+.nav a.cur{background:var(--ink);color:#fff}
+.floor{background:var(--ink);color:#fff;font-weight:500}
+.floor:hover{background:#333}
+.floor .ic{color:#fff}
+.x{background:var(--soft)}.x:hover{background:var(--line)}
+.flr span{background:var(--soft);color:var(--ink);font-family:'Geist Mono',monospace;font-weight:500}
+.flr a:hover,.flr a.cur{color:var(--ink);background:var(--soft)}
+.sheet{border-radius:var(--r);box-shadow:0 0 0 1px var(--line),0 20px 50px rgba(0,0,0,.08)}
+/* кнопки */
+.btn{background:var(--ink)!important;color:#fff!important;border-radius:999px!important;box-shadow:none!important;text-transform:none!important;letter-spacing:0!important;font:500 15px/1 Inter,sans-serif!important;min-height:48px;padding:0 24px}
+.btn:hover{background:#333!important;translate:0 -1px}
+.btn.line,.btn.w{background:#fff!important;color:var(--ink)!important;box-shadow:0 0 0 1px var(--dot)!important}
+.btn.line:hover,.btn.w:hover{background:var(--soft)!important}
+.btn.ghost{background:transparent!important;box-shadow:0 0 0 1px rgba(255,255,255,.5)!important}
+.btn.ghost:hover{background:#fff!important;color:var(--ink)!important}
+.price .btn{font-size:15px!important;letter-spacing:0!important}
+/* секции и сетка */
+.sec{padding:72px 0}
+.sec+.sec,.sec+footer{border-top:1px solid var(--line)}
+.hall{background:var(--wall)!important}
+.box{background:transparent;box-shadow:none;padding:0}
+.st,.folds{display:none}
+@media(min-width:1100px){.sec>.wrap{border-left:1px solid var(--line);border-right:1px solid var(--line);padding-left:48px;padding-right:48px}.sec{padding:96px 0}}
+/* карточки */
+.card,.stage,.q.card,.mini{background:var(--soft)!important;box-shadow:none!important;border-radius:var(--r)!important}
+.card:hover{background:#EFEBE7!important;translate:none}
+.card::after,.stage::after{display:none}
+.stage:hover{box-shadow:none}
+.price.card,.envlp{background:#fff!important;box-shadow:0 0 0 1px var(--line)!important}
+.price.card:hover{background:#fff!important}
+.num{background:#fff!important;color:var(--ink)!important;box-shadow:0 0 0 1px var(--dot);font-family:'Geist Mono',monospace!important;font-weight:500!important}
+.badge,.ri>span{background:#fff!important;color:var(--ink)!important;box-shadow:0 0 0 1px var(--dot)!important;border-radius:10px!important;width:40px!important;height:40px!important}
+.badge .ic{width:20px;height:20px}
+.ex{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.ex:hover{background:var(--wall);box-shadow:0 0 0 1px var(--dot)}
+.say{background:var(--ink);color:#fff;box-shadow:none}
+.say:hover,.say.on{background:var(--o);color:#fff}
+.rt{background:var(--soft)!important;box-shadow:inset 0 0 0 1px var(--dot);color:var(--ink)}
+.a1{color:var(--red)!important}.a2{color:var(--bl)!important}.a3{color:var(--vi)!important}
+.tr-i{color:var(--ink)}
+/* герои */
+.hero{padding:88px 12px 0!important}
+.hero-c,.hx{background:var(--soft)!important;color:var(--ink)!important;border-radius:20px!important}
+.hx::after{display:none!important}
+.hx-t .lead,.hero-t .lead{color:var(--ink)!important;font-weight:400!important}
+.hstat{color:var(--mute)}.hstat b{color:var(--ink);font-family:Geist,sans-serif;font-weight:400}
+.chip{background:#fff!important;color:var(--ink)!important;box-shadow:0 0 0 1px var(--line)}
+.chip:hover{background:var(--wall)!important}
+.chip .ic{color:var(--ink)!important}
+.hcirc{background:var(--o2)!important}
+.phone{background:var(--ink)!important}
+.scr .s1{background:var(--soft)}.scr .s2{background:var(--bl2)}.scr .s3{background:var(--o);color:#fff}
+.scr i{color:var(--mute)}
+.sign{box-shadow:0 0 0 1px var(--line)!important}
+.sign svg{color:var(--ink)!important}
+.lbadge{color:var(--ink)!important;box-shadow:0 0 0 1px var(--line)!important}
+.lbadge text{fill:var(--ink)}
+/* бирюзовые и красные панели */
+.tp{background:var(--soft)!important;color:var(--ink)!important;border-radius:20px!important}
+.tp h2,.tp h3,.tp .lead,.tp .txt,.tp .lead b,.tp .txt b{color:var(--ink)!important}
+.li li{font-weight:400}
+.gc{background:var(--ink)!important;color:#fff!important}
+.stack{box-shadow:0 0 0 1px var(--line)!important}
+.red{background:var(--ink)!important;color:#fff}
+.red h2,.red h3,.red .lead,.red .lead b{color:#fff!important}
+.red .txt,.red .ru{color:#BDB8B1!important}
+.red .ex{background:#1C1C1C;box-shadow:none}
+.red .ex .tr{color:#fff}
+.tl{background:var(--soft)!important;color:var(--ink)!important}
+.tl.g{background:var(--o2)!important;color:var(--ink)!important}
+.tl:hover{box-shadow:none;translate:none;background:#EFEBE7!important}
+.tl.g:hover{background:#F2B996!important}
+.tl>svg{color:var(--ink)}
+.rs{background:#fff!important;box-shadow:0 0 0 1px var(--line)}
+.rs:hover{background:var(--wall)!important}
+.rs b{color:var(--o)!important;font-family:'Geist Mono',monospace!important}
+.rs p{color:var(--ink)}
+.chkp{background:var(--soft)!important}
+.chkp:hover{background:#EFEBE7!important}
+.chkp-bar{background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.chkp-bar i{background:var(--ink)!important}
+.vz,.vz-c{border-radius:var(--r)}
+/* вкладки и переключатели */
+.mods{background:#EFEBE7;padding:6px;border-radius:14px}
+.mod{background:transparent!important;color:var(--mute)!important;box-shadow:none!important;font:500 14px/1.2 Inter,sans-serif!important;border-radius:10px}
+.mod:hover{background:rgba(255,255,255,.6)!important;color:var(--ink)!important}
+.mod[aria-selected=true]{background:#fff!important;color:var(--ink)!important;box-shadow:0 0 0 1px var(--line),0 1px 2px rgba(0,0,0,.06)!important}
+.rtag{background:var(--ink)!important;color:#fff!important}
+.resb{background:#fff!important;color:var(--ink)!important;box-shadow:inset 0 0 0 1px var(--line)}
+.tog{background:#EFEBE7}
+.tog button{color:var(--mute)}
+.tog button:hover{background:rgba(255,255,255,.6);color:var(--ink)}
+.tog button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 0 0 1px var(--line),0 1px 2px rgba(0,0,0,.06)}
+.pk button{background:#fff;box-shadow:0 0 0 1px var(--line);font-weight:500}
+.pk button:hover{background:var(--soft)}
+.pk button[aria-pressed=true]{background:var(--ink);color:#fff;box-shadow:none}
+.res,.chainr{background:#fff!important;box-shadow:0 0 0 1px var(--line)}
+.row{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.row:hover{background:var(--wall)}
+.row-c{color:var(--ink)}
+/* сцены */
+.tile{background:#fff!important;color:var(--ink);box-shadow:inset 0 0 0 1px var(--dot)}
+.tile.a1{background:var(--o)!important;color:#fff;box-shadow:none}
+.tile.a2{background:var(--bl)!important;color:#fff;box-shadow:none}
+.tile.a3{background:var(--vi)!important;color:#fff;box-shadow:none}
+.tile.pl{background:#fff!important}
+.opt{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.hsum div{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.hsum i,.pair b,.ltr.sf,.hw .suf{color:var(--o)!important}
+.ltr.sw .ol{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.ltr.sw .nw{background:var(--o)!important}
+.chipw{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.tml .tr-f,.bag{background:var(--o)!important}
+.nd i{background:#fff;box-shadow:0 0 0 1px var(--line),inset 0 0 0 4px #fff}
+/* упражнения и флипы */
+.ch{background:#fff;box-shadow:0 0 0 1px var(--line);font-weight:500}
+.ch:hover{background:var(--wall);box-shadow:0 0 0 1px var(--dot)}
+.ch.sel{background:var(--ink);color:#fff}
+.ch.ok{background:var(--good)!important;color:#fff;box-shadow:none}
+.ch.no{background:var(--o)!important;color:#fff;box-shadow:none}
+.keys button{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.ord-t{border-color:var(--dot);background:#fff}
+.tpx input,.tp input{border-color:var(--dot)}
+.fb{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.fb.ok{background:#EEF6F1}.fb.no{background:#FCEEE8}
+.face{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.flip:hover .face{box-shadow:0 0 0 1px var(--dot)}
+.face.b{background:var(--soft)}
+.face .h{color:var(--ink)}
+.face.a small .ic{color:var(--o)!important}
+.face.a .w{text-decoration-color:var(--o)!important}
+.score b{color:var(--ink)!important;font-size:64px}
+.bub{background:#fff;box-shadow:0 0 0 1px var(--line)}
+.msg.g .bub{background:var(--soft)}
+.msg.g .bub:hover{background:#EFEBE7}
+/* реклама */
+.pc{background:var(--o2)!important;box-shadow:none!important}
+.per:nth-child(2) .pc{background:var(--vi2)!important}
+.per:nth-child(3) .pc{background:var(--bl2)!important}
+.per:nth-child(4) .pc{background:var(--sand)!important}
+.pc em{color:rgba(255,255,255,.55)!important}
+.pc svg{color:var(--ink)}
+.per h3{color:var(--ink)!important;font-weight:400!important}
+.cn .v{color:var(--ink)!important;text-align:center}
+.bar i{background:var(--ink)!important}
+.bar:hover i{background:var(--o)!important}
+.tm div{background:#fff;color:var(--ink);box-shadow:0 0 0 1px var(--line)}
+.tp .tm div,.red .tm div{box-shadow:none}
+.price .pv{color:var(--ink)!important}
+.price li .ic{color:var(--ink)}
+.faq details{background:var(--soft)}
+.faq details:hover,.faq details[open]{background:#EFEBE7}
+.faq summary .ic{color:var(--ink)}
+.dock{border:0!important;box-shadow:0 0 0 1px var(--line),0 12px 32px rgba(0,0,0,.1)}
+.ph{background:var(--ink)!important}
+.brw{box-shadow:0 0 0 1px var(--line)}
+.brw:hover{box-shadow:0 0 0 1px var(--dot)}
+.brw-b{background:var(--soft)}
+.rvw{box-shadow:0 0 0 1px var(--line)}
+.ft{color:var(--mute)}
 </style>
 
 </head>
@@ -556,21 +764,21 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   </div>
   <div class="hero-a">
   <svg viewBox="0 0 640 560" role="img" aria-label="Стойка ресепшена в отеле, на стойке звонок">
-    <rect width="640" height="560" fill="#F6F1EB"/>
+    <rect width="640" height="560" fill="#F5F3F1"/>
     <path d="M50 400V190a105 105 0 0 1 210 0v210z" fill="#DCE9EA"/><path d="M50 300h210v100H50z" fill="#A9CDD3"/><circle cx="195" cy="205" r="30" fill="#F9DFD0"/><path d="M50 322c26-12 48-12 70 0s48 12 70 0 48-12 70 0" fill="none" stroke="#fff" stroke-width="3"/><path d="M50 352c26-12 48-12 70 0s48 12 70 0 48-12 70 0" fill="none" stroke="#fff" stroke-width="3"/>
     <path d="M50 400V190a105 105 0 0 1 210 0v210" fill="none" stroke="#fff" stroke-width="10"/>
     <path d="M14 0h46v400H14z" fill="#EADFD2"/><path d="M24 0h6v400h-6zM42 0h8v400h-8z" fill="#E0D3C3"/><path d="M250 0h46v400h-46z" fill="#EADFD2"/><path d="M262 0h7v400h-7zM280 0h7v400h-7z" fill="#E0D3C3"/>
     <rect x="344" y="96" width="262" height="240" rx="10" fill="#B98A5E"/><path d="M372 96v240M402 96v240M432 96v240M462 96v240M492 96v240M522 96v240M552 96v240M582 96v240" stroke="#A97A4F" stroke-width="3"/>
-    <g id="keys"><g fill="#F6F1EB"><circle cx="378" cy="146" r="5"/><circle cx="438" cy="146" r="5"/><circle cx="498" cy="146" r="5"/><circle cx="558" cy="146" r="5"/><circle cx="378" cy="236" r="5"/><circle cx="438" cy="236" r="5"/><circle cx="498" cy="236" r="5"/><circle cx="558" cy="236" r="5"/></g>
+    <g id="keys"><g fill="#F5F3F1"><circle cx="378" cy="146" r="5"/><circle cx="438" cy="146" r="5"/><circle cx="498" cy="146" r="5"/><circle cx="558" cy="146" r="5"/><circle cx="378" cy="236" r="5"/><circle cx="438" cy="236" r="5"/><circle cx="498" cy="236" r="5"/><circle cx="558" cy="236" r="5"/></g>
       <g fill="#FBF8F4"><rect x="364" y="156" width="28" height="42" rx="6"/><rect x="484" y="156" width="28" height="42" rx="6"/><rect x="544" y="156" width="28" height="42" rx="6"/><rect x="364" y="246" width="28" height="42" rx="6"/><rect x="424" y="246" width="28" height="42" rx="6"/><rect x="544" y="246" width="28" height="42" rx="6"/></g>
-      <g fill="#E3283A"><rect x="424" y="156" width="28" height="42" rx="6"/><rect x="484" y="246" width="28" height="42" rx="6"/></g></g>
-    <text x="475" y="72" text-anchor="middle" font-family="Forum,serif" font-size="34" fill="#211E1E">Resepsiyon</text>
+      <g fill="#E4572E"><rect x="424" y="156" width="28" height="42" rx="6"/><rect x="484" y="246" width="28" height="42" rx="6"/></g></g>
+    <text x="475" y="72" text-anchor="middle" font-family="Geist,serif" font-size="34" fill="#0B0B0B">Resepsiyon</text>
     <g class="lamp"><path d="M336 0v104" stroke="#2B2725" stroke-width="2"/><g fill="none" stroke="#2B2725" stroke-width="1.6"><circle cx="336" cy="140" r="36"/><ellipse cx="336" cy="140" rx="16" ry="36"/><ellipse cx="336" cy="140" rx="36" ry="13"/></g><circle cx="336" cy="140" r="8" fill="#F9DFD0"/></g>
     <rect x="30" y="418" width="580" height="142" fill="#FBF8F4"/><g stroke="#EDE5DA" stroke-width="3"><path d="M60 436v124M92 436v124M124 436v124M156 436v124M188 436v124M220 436v124M252 436v124M284 436v124M316 436v124M348 436v124M380 436v124M412 436v124M444 436v124M476 436v124M508 436v124M540 436v124M572 436v124"/></g>
     <rect x="12" y="402" width="616" height="20" rx="4" fill="#2B2725"/>
-    <g><path d="M70 402h48l-7-50H77z" fill="#E3283A"/><path d="M94 352V262" stroke="#7A6248" stroke-width="6"/><g fill="#7F8F5E"><circle cx="94" cy="238" r="42"/><circle cx="58" cy="272" r="26"/><circle cx="130" cy="274" r="28"/></g><g fill="#94A371"><circle cx="82" cy="224" r="16"/><circle cx="122" cy="256" r="12"/></g></g>
+    <g><path d="M70 402h48l-7-50H77z" fill="#E4572E"/><path d="M94 352V262" stroke="#7A6248" stroke-width="6"/><g fill="#7F8F5E"><circle cx="94" cy="238" r="42"/><circle cx="58" cy="272" r="26"/><circle cx="130" cy="274" r="28"/></g><g fill="#94A371"><circle cx="82" cy="224" r="16"/><circle cx="122" cy="256" r="12"/></g></g>
     <g id="bell" role="button" tabindex="0" aria-label="Нажать на звонок"><rect x="430" y="340" width="110" height="70" fill="transparent"/><g class="ring"><path d="M452 392a33 33 0 0 1 66 0z" fill="#C9A45C"/><rect x="480" y="350" width="10" height="12" rx="3" fill="#A98440"/></g><rect x="444" y="392" width="82" height="10" rx="3" fill="#A98440"/></g>
-    <g transform="rotate(-8 300 390)"><rect x="262" y="362" width="82" height="40" rx="7" fill="#E3283A"/><circle cx="280" cy="382" r="6" fill="#fff"/><rect x="295" y="376" width="38" height="4" fill="#fff"/><rect x="295" y="385" width="26" height="4" fill="#F9DFD0"/></g>
+    <g transform="rotate(-8 300 390)"><rect x="262" y="362" width="82" height="40" rx="7" fill="#E4572E"/><circle cx="280" cy="382" r="6" fill="#fff"/><rect x="295" y="376" width="38" height="4" fill="#fff"/><rect x="295" y="385" width="26" height="4" fill="#F9DFD0"/></g>
   </svg>
   </div>
 </div></section>
@@ -605,16 +813,16 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <div class="ex"><button type="button" class="say" data-say="Rezervasyonum var." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Rezervasyon</b><i class="a1">um</i> var.</p><p class="ru">У меня есть бронь.</p></div></div>
     <figure class="vz col" data-vz>
       <svg class="vz-a" viewBox="0 0 640 400" role="img" aria-label="Номер отеля: кровать с двумя подушками, на тумбочке конверт с ключом от номера 305">
-        <rect width="640" height="400" fill="#F6F1EB"/>
+        <rect width="640" height="400" fill="#F5F3F1"/>
         <path d="M0 312h640v88H0z" fill="#E7DCCF"/>
         <path d="M60 332V126a22 22 0 0 1 22-22h300a22 22 0 0 1 22 22v206z" fill="#B98A5E"/><path d="M98 104v228M142 104v228M186 104v228M230 104v228M274 104v228M318 104v228M362 104v228" stroke="#A97A4F" stroke-width="3"/>
-        <rect x="30" y="238" width="414" height="94" rx="20" fill="#E3283A"/>
+        <rect x="30" y="238" width="414" height="94" rx="20" fill="#E4572E"/>
         <rect x="44" y="208" width="386" height="60" rx="26" fill="#FBF8F4"/>
         <g data-v><rect x="70" y="146" width="150" height="86" rx="30" fill="#fff"/><path d="M82 152c8 16 8 62 0 76M208 152c-8 16-8 62 0 76" fill="none" stroke="#E7DCCF" stroke-width="3"/></g>
         <g data-v><rect x="238" y="146" width="150" height="86" rx="30" fill="#fff"/><path d="M250 152c8 16 8 62 0 76M376 152c-8 16-8 62 0 76" fill="none" stroke="#E7DCCF" stroke-width="3"/></g>
         <rect x="480" y="262" width="124" height="102" rx="8" fill="#B98A5E"/><rect x="494" y="284" width="96" height="30" rx="5" fill="#A97A4F"/><rect x="494" y="324" width="96" height="30" rx="5" fill="#A97A4F"/>
         <g data-v><g transform="rotate(-6 540 230)"><rect x="486" y="200" width="118" height="62" rx="6" fill="#FBF8F4"/><path d="M486 206l59 30 59-30" fill="none" stroke="#E7DCCF" stroke-width="4"/></g></g>
-        <g class="bob"><path d="M540 40v42" stroke="#2B2725" stroke-width="3"/><circle cx="540" cy="100" r="20" fill="none" stroke="#C9A45C" stroke-width="7"/><rect x="510" y="122" width="60" height="60" rx="10" fill="#E3283A"/><text x="540" y="154" text-anchor="middle" dominant-baseline="central" font-family="Manrope,sans-serif" font-weight="800" font-size="24" fill="#fff">305</text></g>
+        <g class="bob"><path d="M540 40v42" stroke="#2B2725" stroke-width="3"/><circle cx="540" cy="100" r="20" fill="none" stroke="#C9A45C" stroke-width="7"/><rect x="510" y="122" width="60" height="60" rx="10" fill="#E4572E"/><text x="540" y="154" text-anchor="middle" dominant-baseline="central" font-family="Inter,sans-serif" font-weight="800" font-size="24" fill="#fff">305</text></g>
       </svg>
       <div class="vz-c">
         <p class="vz-t">Подушку принесли. Две.</p>
@@ -635,17 +843,17 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   </div>
   <figure class="vz" data-vz style="margin-top:30px">
     <svg class="vz-a" viewBox="0 0 640 320" role="img" aria-label="Три сцены: ключ на крючке, ключ с биркой, пустой крючок">
-      <rect width="640" height="320" fill="#F6F1EB"/>
+      <rect width="640" height="320" fill="#F5F3F1"/>
       <rect y="266" width="640" height="54" fill="#E7DCCF"/>
       <path d="M212 0v320M428 0v320" stroke="#fff" stroke-width="6"/>
-      <g font-family="Manrope,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central" fill="#fff" font-size="32">
-        <g data-v><circle cx="44" cy="46" r="26" fill="#E3283A"/><text x="44" y="47">1</text></g>
-        <g data-v><circle cx="260" cy="46" r="26" fill="#E3283A"/><text x="260" y="47">2</text></g>
-        <g data-v><circle cx="476" cy="46" r="26" fill="#E3283A"/><text x="476" y="47">3</text></g>
+      <g font-family="Inter,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central" fill="#fff" font-size="32">
+        <g data-v><circle cx="44" cy="46" r="26" fill="#E4572E"/><text x="44" y="47">1</text></g>
+        <g data-v><circle cx="260" cy="46" r="26" fill="#E4572E"/><text x="260" y="47">2</text></g>
+        <g data-v><circle cx="476" cy="46" r="26" fill="#E4572E"/><text x="476" y="47">3</text></g>
       </g>
       <g stroke="#2B2725" stroke-width="10" stroke-linecap="round" fill="none"><path d="M106 96v30M320 96v30M536 96v30"/></g>
       <g data-v><g stroke="#C9A45C" stroke-width="13" fill="none" stroke-linecap="round"><circle cx="106" cy="154" r="26"/><path d="M106 180v76M106 216h24M106 242h18"/></g></g>
-      <g data-v><g stroke="#C9A45C" stroke-width="13" fill="none" stroke-linecap="round"><circle cx="320" cy="154" r="26"/><path d="M320 180v76M320 216h24M320 242h18"/></g><path d="M342 200h46l14 14-14 14h-46z" fill="#E3283A"/><circle cx="356" cy="214" r="5" fill="#fff"/></g>
+      <g data-v><g stroke="#C9A45C" stroke-width="13" fill="none" stroke-linecap="round"><circle cx="320" cy="154" r="26"/><path d="M320 180v76M320 216h24M320 242h18"/></g><path d="M342 200h46l14 14-14 14h-46z" fill="#E4572E"/><circle cx="356" cy="214" r="5" fill="#fff"/></g>
       <g data-v><circle cx="536" cy="154" r="26" fill="none" stroke="#D8D1CB" stroke-width="5" stroke-dasharray="4 8"/><path d="M536 180v76M536 216h24M536 242h18" fill="none" stroke="#D8D1CB" stroke-width="5" stroke-dasharray="4 8" stroke-linecap="round"/></g>
     </svg>
     <div class="vz-c">
@@ -664,12 +872,12 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   <figure class="vz pl" data-vz style="margin-top:30px">
     <svg class="vz-a" viewBox="0 0 640 360" role="img" aria-label="Ночной ресепшен: за окном луна, кондиционер сломан и капает, мужик за стойкой разводит руками">
       <rect width="640" height="360" fill="#3A3230"/>
-      <path d="M34 34h190v190H34z" fill="#211E1E"/><path d="M34 34h190v190H34z" fill="none" stroke="#F6F1EB" stroke-width="8"/><path d="M129 34v190M34 129h190" stroke="#F6F1EB" stroke-width="5"/>
-      <g data-v><circle cx="178" cy="82" r="28" fill="#F9DFD0"/><circle cx="168" cy="74" r="24" fill="#211E1E"/></g>
-      <g fill="#F6F1EB"><circle cx="66" cy="66" r="3"/><circle cx="96" cy="170" r="3"/><circle cx="188" cy="176" r="3"/></g>
-      <g data-v><rect x="330" y="46" width="250" height="70" rx="12" fill="#F6F1EB"/><path d="M350 94h210" stroke="#D8D1CB" stroke-width="5"/><circle cx="556" cy="68" r="9" fill="#E3283A"/><path d="M552 64l8 8m0-8-8 8" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></g>
+      <path d="M34 34h190v190H34z" fill="#0B0B0B"/><path d="M34 34h190v190H34z" fill="none" stroke="#F5F3F1" stroke-width="8"/><path d="M129 34v190M34 129h190" stroke="#F5F3F1" stroke-width="5"/>
+      <g data-v><circle cx="178" cy="82" r="28" fill="#F9DFD0"/><circle cx="168" cy="74" r="24" fill="#0B0B0B"/></g>
+      <g fill="#F5F3F1"><circle cx="66" cy="66" r="3"/><circle cx="96" cy="170" r="3"/><circle cx="188" cy="176" r="3"/></g>
+      <g data-v><rect x="330" y="46" width="250" height="70" rx="12" fill="#F5F3F1"/><path d="M350 94h210" stroke="#D8D1CB" stroke-width="5"/><circle cx="556" cy="68" r="9" fill="#E4572E"/><path d="M552 64l8 8m0-8-8 8" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></g>
       <g class="bob" style="transform-origin:50% 0"><path d="M400 122c-9 13-9 19-9 24a9 9 0 0 0 18 0c0-5 0-11-9-24zM462 136c-9 13-9 19-9 24a9 9 0 0 0 18 0c0-5 0-11-9-24zM516 118c-9 13-9 19-9 24a9 9 0 0 0 18 0c0-5 0-11-9-24z" fill="#A9CDD3"/></g>
-      <g data-v><circle cx="434" cy="186" r="38" fill="#F9DFD0"/><path d="M394 180a40 40 0 0 1 80 0c-10-14-26-18-40-18s-30 4-40 18z" fill="#211E1E"/><path d="M372 360V262c0-26 26-40 62-40s62 14 62 40v98z" fill="#E3283A"/><path d="M372 278l-74-36" stroke="#E3283A" stroke-width="28" stroke-linecap="round"/><path d="M496 278l74-36" stroke="#E3283A" stroke-width="28" stroke-linecap="round"/><circle cx="292" cy="238" r="16" fill="#F9DFD0"/><circle cx="576" cy="238" r="16" fill="#F9DFD0"/></g>
+      <g data-v><circle cx="434" cy="186" r="38" fill="#F9DFD0"/><path d="M394 180a40 40 0 0 1 80 0c-10-14-26-18-40-18s-30 4-40 18z" fill="#0B0B0B"/><path d="M372 360V262c0-26 26-40 62-40s62 14 62 40v98z" fill="#E4572E"/><path d="M372 278l-74-36" stroke="#E4572E" stroke-width="28" stroke-linecap="round"/><path d="M496 278l74-36" stroke="#E4572E" stroke-width="28" stroke-linecap="round"/><circle cx="292" cy="238" r="16" fill="#F9DFD0"/><circle cx="576" cy="238" r="16" fill="#F9DFD0"/></g>
       <rect x="240" y="306" width="400" height="54" fill="#2B2725"/><rect x="226" y="296" width="414" height="16" rx="4" fill="#B98A5E"/>
     </svg>
     <div class="vz-c">
@@ -716,11 +924,11 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
         <rect width="640" height="330" fill="#B98A5E"/>
         <path d="M70 0v330M216 0v330M362 0v330M508 0v330" stroke="#A97A4F" stroke-width="3"/>
         <rect x="24" y="22" width="592" height="16" rx="6" fill="#2B2725"/>
-        <g font-family="Manrope,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central">
-          <g data-v><circle cx="96" cy="66" r="9" fill="#F6F1EB"/><rect x="42" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="96" y="130" font-size="30" fill="#6A6462">a ı</text><path d="M96 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M86 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="216" r="28" fill="#E3283A"/><text x="96" y="216" font-size="34" fill="#fff">ı</text></g>
-          <g data-v><circle cx="242" cy="66" r="9" fill="#F6F1EB"/><rect x="188" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="242" y="130" font-size="30" fill="#6A6462">e i</text><path d="M242 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M232 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="242" cy="216" r="28" fill="#E3283A"/><text x="242" y="216" font-size="34" fill="#fff">i</text></g>
-          <g data-v><circle cx="388" cy="66" r="9" fill="#F6F1EB"/><rect x="334" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="388" y="130" font-size="30" fill="#6A6462">o u</text><path d="M388 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M378 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="388" cy="216" r="28" fill="#E3283A"/><text x="388" y="216" font-size="34" fill="#fff">u</text></g>
-          <g data-v><circle cx="534" cy="66" r="9" fill="#F6F1EB"/><rect x="480" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="534" y="130" font-size="30" fill="#6A6462">ö ü</text><path d="M534 158v22" stroke="#6A6462" stroke-width="5" stroke-linecap="round"/><path d="M524 172l10 12 10-12" fill="none" stroke="#6A6462" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="534" cy="216" r="28" fill="#E3283A"/><text x="534" y="216" font-size="34" fill="#fff">ü</text></g>
+        <g font-family="Inter,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central">
+          <g data-v><circle cx="96" cy="66" r="9" fill="#F5F3F1"/><rect x="42" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="96" y="130" font-size="30" fill="#777169">a ı</text><path d="M96 158v22" stroke="#777169" stroke-width="5" stroke-linecap="round"/><path d="M86 172l10 12 10-12" fill="none" stroke="#777169" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="96" cy="216" r="28" fill="#E4572E"/><text x="96" y="216" font-size="34" fill="#fff">ı</text></g>
+          <g data-v><circle cx="242" cy="66" r="9" fill="#F5F3F1"/><rect x="188" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="242" y="130" font-size="30" fill="#777169">e i</text><path d="M242 158v22" stroke="#777169" stroke-width="5" stroke-linecap="round"/><path d="M232 172l10 12 10-12" fill="none" stroke="#777169" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="242" cy="216" r="28" fill="#E4572E"/><text x="242" y="216" font-size="34" fill="#fff">i</text></g>
+          <g data-v><circle cx="388" cy="66" r="9" fill="#F5F3F1"/><rect x="334" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="388" y="130" font-size="30" fill="#777169">o u</text><path d="M388 158v22" stroke="#777169" stroke-width="5" stroke-linecap="round"/><path d="M378 172l10 12 10-12" fill="none" stroke="#777169" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="388" cy="216" r="28" fill="#E4572E"/><text x="388" y="216" font-size="34" fill="#fff">u</text></g>
+          <g data-v><circle cx="534" cy="66" r="9" fill="#F5F3F1"/><rect x="480" y="84" width="108" height="170" rx="14" fill="#FBF8F4"/><text x="534" y="130" font-size="30" fill="#777169">ö ü</text><path d="M534 158v22" stroke="#777169" stroke-width="5" stroke-linecap="round"/><path d="M524 172l10 12 10-12" fill="none" stroke="#777169" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="534" cy="216" r="28" fill="#E4572E"/><text x="534" y="216" font-size="34" fill="#fff">ü</text></g>
         </g>
         <rect y="282" width="640" height="48" fill="#2B2725"/><g fill="#C9A45C"><rect x="96" y="298" width="150" height="10" rx="5"/><rect x="396" y="298" width="150" height="10" rx="5"/></g>
       </svg>
@@ -761,15 +969,15 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <figure class="vz pl" data-vz>
       <div class="vz-o">
         <svg class="vz-a" viewBox="0 0 640 400" role="img" aria-label="Тележка продавца фисташек, на лотке орехи с буквами f s t k ç ş h p">
-          <rect width="640" height="400" fill="#F6F1EB"/>
+          <rect width="640" height="400" fill="#F5F3F1"/>
           <rect y="342" width="640" height="58" fill="#E7DCCF"/>
           <g fill="#2B2725"><circle cx="196" cy="350" r="24"/><circle cx="448" cy="350" r="24"/></g>
           <rect x="120" y="172" width="404" height="166" rx="12" fill="#B98A5E"/>
           <rect x="120" y="172" width="404" height="20" rx="6" fill="#A97A4F"/>
-          <path d="M136 92h372v80H136z" fill="#fff"/><path d="M136 92h46v80h-46zM228 92h46v80h-46zM320 92h46v80h-46zM412 92h46v80h-46z" fill="#E3283A"/>
+          <path d="M136 92h372v80H136z" fill="#fff"/><path d="M136 92h46v80h-46zM228 92h46v80h-46zM320 92h46v80h-46zM412 92h46v80h-46z" fill="#E4572E"/>
           <path d="M168 92v-46M476 92v-46" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/>
-          <rect x="130" y="24" width="384" height="44" rx="10" fill="#E3283A"/>
-          <g font-family="Manrope,sans-serif" font-weight="800" font-size="32" text-anchor="middle" dominant-baseline="central" fill="#211E1E">
+          <rect x="130" y="24" width="384" height="44" rx="10" fill="#E4572E"/>
+          <g font-family="Inter,sans-serif" font-weight="800" font-size="32" text-anchor="middle" dominant-baseline="central" fill="#0B0B0B">
             <g data-v><ellipse cx="172" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="172" y="238">f</text></g>
             <g data-v><ellipse cx="270" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="270" y="238">s</text></g>
             <g data-v><ellipse cx="368" cy="238" rx="40" ry="33" fill="#D3DEAD"/><text x="368" y="238">t</text></g>
@@ -814,13 +1022,13 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     </div></div>
     <figure class="vz" data-vz>
       <svg class="vz-a" viewBox="0 0 640 300" role="img" aria-label="Четыре предмета и как меняется буква: счёт, лекарство, шаги, кровать">
-        <rect width="640" height="300" fill="#F6F1EB"/>
+        <rect width="640" height="300" fill="#F5F3F1"/>
         <path d="M160 0v300M320 0v300M480 0v300" stroke="#fff" stroke-width="5"/>
-        <g font-family="Manrope,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central" font-size="34" fill="#E3283A">
+        <g font-family="Inter,sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central" font-size="34" fill="#E4572E">
           <g data-v><path d="M54 62h52v112l-10-8-8 8-8-8-8 8-8-8-10 8z" fill="#fff"/><path d="M64 88h32M64 108h32M64 128h22" stroke="#D8D1CB" stroke-width="6" stroke-linecap="round"/><text x="80" y="232">p → b</text></g>
-          <g data-v><rect x="222" y="60" width="56" height="26" rx="6" fill="#2B2725"/><rect x="214" y="86" width="72" height="88" rx="14" fill="#E3283A"/><path d="M250 108v44M228 130h44" stroke="#fff" stroke-width="9" stroke-linecap="round"/><text x="250" y="232">ç → c</text></g>
+          <g data-v><rect x="222" y="60" width="56" height="26" rx="6" fill="#2B2725"/><rect x="214" y="86" width="72" height="88" rx="14" fill="#E4572E"/><path d="M250 108v44M228 130h44" stroke="#fff" stroke-width="9" stroke-linecap="round"/><text x="250" y="232">ç → c</text></g>
           <g data-v><g fill="#2B2725"><ellipse cx="396" cy="128" rx="19" ry="28" transform="rotate(-14 396 128)"/><ellipse cx="402" cy="172" rx="13" ry="10"/><ellipse cx="444" cy="94" rx="19" ry="28" transform="rotate(14 444 94)"/><ellipse cx="436" cy="138" rx="13" ry="10"/></g><text x="420" y="232">t → d</text></g>
-          <g data-v><rect x="510" y="108" width="110" height="60" rx="16" fill="#fff"/><rect x="510" y="90" width="44" height="34" rx="12" fill="#F9DFD0"/><rect x="510" y="150" width="110" height="24" rx="8" fill="#E3283A"/><path d="M518 174v16M612 174v16" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/><text x="565" y="232">k → ğ</text></g>
+          <g data-v><rect x="510" y="108" width="110" height="60" rx="16" fill="#fff"/><rect x="510" y="90" width="44" height="34" rx="12" fill="#F9DFD0"/><rect x="510" y="150" width="110" height="24" rx="8" fill="#E4572E"/><path d="M518 174v16M612 174v16" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/><text x="565" y="232">k → ğ</text></g>
         </g>
       </svg>
       <div class="vz-c">
@@ -855,11 +1063,11 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     </div>
     <figure class="vz" data-vz style="margin-top:16px">
       <svg class="vz-a" viewBox="0 0 640 340" role="img" aria-label="Полка в номере: подушка, стопка полотенец, фен и ключ">
-        <rect width="640" height="340" fill="#F6F1EB"/>
+        <rect width="640" height="340" fill="#F5F3F1"/>
         <rect x="24" y="268" width="592" height="24" rx="6" fill="#B98A5E"/><path d="M90 292l-20 48M550 292l20 48" stroke="#A97A4F" stroke-width="14"/>
         <g data-v><rect x="46" y="166" width="170" height="102" rx="34" fill="#fff"/><path d="M60 172c10 20 10 72 0 90M202 172c-10 20-10 72 0 90" fill="none" stroke="#E7DCCF" stroke-width="3"/></g>
-        <g data-v><rect x="236" y="240" width="140" height="28" rx="6" fill="#E3283A"/><rect x="244" y="212" width="124" height="28" rx="6" fill="#F9DFD0"/><rect x="236" y="184" width="140" height="28" rx="6" fill="#E3283A"/><rect x="244" y="156" width="124" height="28" rx="6" fill="#F9DFD0"/><path d="M300 156v112" stroke="#fff" stroke-width="4"/></g>
-        <g data-v><g transform="rotate(-20 500 180)"><rect x="412" y="150" width="124" height="60" rx="26" fill="#2B2725"/><rect x="530" y="164" width="44" height="32" rx="6" fill="#2B2725"/><rect x="452" y="206" width="30" height="76" rx="12" fill="#2B2725"/><circle cx="446" cy="180" r="10" fill="#E3283A"/></g></g>
+        <g data-v><rect x="236" y="240" width="140" height="28" rx="6" fill="#E4572E"/><rect x="244" y="212" width="124" height="28" rx="6" fill="#F9DFD0"/><rect x="236" y="184" width="140" height="28" rx="6" fill="#E4572E"/><rect x="244" y="156" width="124" height="28" rx="6" fill="#F9DFD0"/><path d="M300 156v112" stroke="#fff" stroke-width="4"/></g>
+        <g data-v><g transform="rotate(-20 500 180)"><rect x="412" y="150" width="124" height="60" rx="26" fill="#2B2725"/><rect x="530" y="164" width="44" height="32" rx="6" fill="#2B2725"/><rect x="452" y="206" width="30" height="76" rx="12" fill="#2B2725"/><circle cx="446" cy="180" r="10" fill="#E4572E"/></g></g>
         <g data-v><path d="M306 10v28" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/><g stroke="#C9A45C" stroke-width="12" fill="none" stroke-linecap="round"><circle cx="306" cy="60" r="20"/><path d="M306 80v56M306 108h20M306 128h14"/></g></g>
       </svg>
       <div class="vz-c">
@@ -908,12 +1116,12 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <figure class="vz" data-vz style="margin-top:44px">
       <div class="vz-o">
         <svg class="vz-a" viewBox="0 0 640 280" role="img" aria-label="Лента с чемоданами: вещь, потом действие, глагол хочу приезжает последним">
-          <rect width="640" height="280" fill="#F6F1EB"/>
+          <rect width="640" height="280" fill="#F5F3F1"/>
           <rect y="212" width="640" height="68" fill="#2B2725"/>
           <g fill="#D8D1CB"><circle cx="70" cy="246" r="16"/><circle cx="210" cy="246" r="16"/><circle cx="350" cy="246" r="16"/><circle cx="490" cy="246" r="16"/><circle cx="600" cy="246" r="16"/></g>
           <g data-v><rect x="20" y="104" width="138" height="108" rx="14" fill="#F9DFD0"/><rect x="66" y="80" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
           <g data-v><rect x="176" y="104" width="212" height="108" rx="14" fill="#A9CDD3"/><rect x="258" y="80" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
-          <g data-v class="bob" style="transform-origin:50% 100%"><rect x="406" y="86" width="214" height="126" rx="14" fill="#E3283A"/><rect x="490" y="62" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
+          <g data-v class="bob" style="transform-origin:50% 100%"><rect x="406" y="86" width="214" height="126" rx="14" fill="#E4572E"/><rect x="490" y="62" width="46" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
         </svg>
         <span class="ov" style="left:13.900%;top:57%" lang="tr">Odamı</span>
         <span class="ov" style="left:44%;top:57%" lang="tr">değiştirmek</span>
@@ -941,10 +1149,10 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
     <figure class="vz" data-vz>
       <svg class="vz-a" viewBox="0 0 660 300" role="img" aria-label="Три панели: приехали с чемоданом, живём у моря, уезжаем с чемоданом">
         <rect x="0" width="212" height="300" fill="#E7DCCF"/><rect x="224" width="212" height="300" fill="#A9CDD3"/><rect x="448" width="212" height="300" fill="#F9DFD0"/>
-        <g font-family="Manrope,sans-serif" font-weight="800" font-size="30" text-anchor="middle" dominant-baseline="central"><text x="34" y="36" fill="#E3283A">1</text><text x="258" y="36" fill="#E3283A">2</text><text x="482" y="36" fill="#E3283A">3</text></g>
-        <g data-v><path d="M30 100l62-24 58 30-18 16-44-10-20 26-18-8 4-26-24-4z" fill="#fff"/><rect x="58" y="176" width="96" height="86" rx="10" fill="#E3283A"/><rect x="88" y="150" width="36" height="26" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/><path d="M58 208h96" stroke="#BE1A2B" stroke-width="6"/></g>
-        <g data-v><circle cx="372" cy="62" r="30" fill="#F9DFD0"/><path d="M224 196c28-16 52-16 80 0s52 16 80 0 44-12 52-6v110H224z" fill="#fff" opacity=".85"/><path d="M262 232h110l26 38H288z" fill="#E3283A"/><path d="M262 232l-16-58" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/></g>
-        <g data-v><path d="M582 300V112a10 10 0 0 1 10-10h68v198z" fill="#fff"/><circle cx="600" cy="200" r="7" fill="#C9A45C"/><rect x="474" y="190" width="86" height="76" rx="10" fill="#E3283A"/><rect x="500" y="166" width="34" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/><path d="M506 124h44M534 110l18 14-18 14" fill="none" stroke="#E3283A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <g font-family="Inter,sans-serif" font-weight="800" font-size="30" text-anchor="middle" dominant-baseline="central"><text x="34" y="36" fill="#E4572E">1</text><text x="258" y="36" fill="#E4572E">2</text><text x="482" y="36" fill="#E4572E">3</text></g>
+        <g data-v><path d="M30 100l62-24 58 30-18 16-44-10-20 26-18-8 4-26-24-4z" fill="#fff"/><rect x="58" y="176" width="96" height="86" rx="10" fill="#E4572E"/><rect x="88" y="150" width="36" height="26" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/><path d="M58 208h96" stroke="#C8441F" stroke-width="6"/></g>
+        <g data-v><circle cx="372" cy="62" r="30" fill="#F9DFD0"/><path d="M224 196c28-16 52-16 80 0s52 16 80 0 44-12 52-6v110H224z" fill="#fff" opacity=".85"/><path d="M262 232h110l26 38H288z" fill="#E4572E"/><path d="M262 232l-16-58" stroke="#2B2725" stroke-width="7" stroke-linecap="round"/></g>
+        <g data-v><path d="M582 300V112a10 10 0 0 1 10-10h68v198z" fill="#fff"/><circle cx="600" cy="200" r="7" fill="#C9A45C"/><rect x="474" y="190" width="86" height="76" rx="10" fill="#E4572E"/><rect x="500" y="166" width="34" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/><path d="M506 124h44M534 110l18 14-18 14" fill="none" stroke="#E4572E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
       </svg>
       <div class="vz-c">
         <p class="vz-t">Приехали, живём, уезжаем</p>
@@ -974,13 +1182,13 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   </div>
   <figure class="vz pl" data-vz>
     <svg class="vz-a" viewBox="0 0 640 260" role="img" aria-label="Гласная встретила гласную: между ними вставлена прокладка y, получается odayı">
-      <rect width="640" height="260" fill="#F6F1EB"/>
-      <g font-family="Manrope,sans-serif" font-weight="800" font-size="64" text-anchor="middle" dominant-baseline="central">
-        <g data-v><rect x="46" y="96" width="216" height="118" rx="20" fill="#F9DFD0"/><text x="154" y="156" fill="#211E1E">oda</text></g>
-        <g data-v><rect x="402" y="96" width="140" height="118" rx="20" fill="#E3283A"/><text x="472" y="152" fill="#fff" font-size="92">ı</text></g>
-        <g class="bob"><path d="M284 46h72l-10 150h-52z" fill="#fff" stroke="#E3283A" stroke-width="6" stroke-linejoin="round"/><text x="320" y="120" fill="#E3283A">y</text></g>
+      <rect width="640" height="260" fill="#F5F3F1"/>
+      <g font-family="Inter,sans-serif" font-weight="800" font-size="64" text-anchor="middle" dominant-baseline="central">
+        <g data-v><rect x="46" y="96" width="216" height="118" rx="20" fill="#F9DFD0"/><text x="154" y="156" fill="#0B0B0B">oda</text></g>
+        <g data-v><rect x="402" y="96" width="140" height="118" rx="20" fill="#E4572E"/><text x="472" y="152" fill="#fff" font-size="92">ı</text></g>
+        <g class="bob"><path d="M284 46h72l-10 150h-52z" fill="#fff" stroke="#E4572E" stroke-width="6" stroke-linejoin="round"/><text x="320" y="120" fill="#E4572E">y</text></g>
       </g>
-      <path d="M262 124l22-8M262 188l22 8M402 124l-22-8M402 188l-22 8" stroke="#E3283A" stroke-width="6" stroke-linecap="round"/>
+      <path d="M262 124l22-8M262 188l22 8M402 124l-22-8M402 188l-22 8" stroke="#E4572E" stroke-width="6" stroke-linecap="round"/>
     </svg>
     <div class="vz-c">
       <p class="vz-t">Гласная встретила гласную</p>
@@ -997,14 +1205,14 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   <div class="btns" style="justify-content:center"><button type="button" class="btn line" id="chatP"><svg class="ic"><use href="#i-sound"/></svg>Послушать весь</button></div>
   <figure class="vz" data-vz>
     <svg class="vz-a" viewBox="0 0 640 360" role="img" aria-label="Ресепшен: Айше за стойкой, гость с чемоданом, между ними реплики и звонок">
-      <rect width="640" height="360" fill="#F6F1EB"/>
+      <rect width="640" height="360" fill="#F5F3F1"/>
       <rect y="276" width="640" height="84" fill="#FBF8F4"/>
-      <g data-v><circle cx="168" cy="104" r="30" fill="#F9DFD0"/><path d="M136 104a32 32 0 0 1 64 0c-8-12-20-14-32-14s-24 2-32 14z" fill="#2B2725"/><path d="M116 276v-96c0-30 22-44 52-44s52 14 52 44v96z" fill="#E3283A"/></g>
+      <g data-v><circle cx="168" cy="104" r="30" fill="#F9DFD0"/><path d="M136 104a32 32 0 0 1 64 0c-8-12-20-14-32-14s-24 2-32 14z" fill="#2B2725"/><path d="M116 276v-96c0-30 22-44 52-44s52 14 52 44v96z" fill="#E4572E"/></g>
       <rect x="86" y="260" width="240" height="22" rx="4" fill="#2B2725"/><path d="M100 282h212v78H100z" fill="#B98A5E"/>
       <g data-v><path d="M240 94h110a18 18 0 0 1 18 18v42a18 18 0 0 1-18 18h-70l-26 26 6-26h-20a18 18 0 0 1-18-18v-42a18 18 0 0 1 18-18z" fill="#fff"/><path d="M262 120h70M262 142h46" stroke="#D8D1CB" stroke-width="8" stroke-linecap="round"/></g>
       <g data-v><circle cx="476" cy="104" r="30" fill="#F9DFD0"/><path d="M444 104a32 32 0 0 1 64 0c-8-16-20-20-32-20s-24 4-32 20z" fill="#94551F"/><path d="M424 276v-96c0-30 22-44 52-44s52 14 52 44v96z" fill="#A9CDD3"/><path d="M430 276v84h34v-84zM488 276v84h34v-84z" fill="#2B2725"/></g>
-      <g data-v><rect x="540" y="240" width="72" height="100" rx="10" fill="#E3283A"/><rect x="560" y="216" width="32" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
-      <g data-v><path d="M372 66h-58a14 14 0 0 0-14 14v34a14 14 0 0 0 14 14h12l-4 20 20-20h30a14 14 0 0 0 14-14V80a14 14 0 0 0-14-14z" fill="#E3283A" transform="translate(30 -26)"/></g>
+      <g data-v><rect x="540" y="240" width="72" height="100" rx="10" fill="#E4572E"/><rect x="560" y="216" width="32" height="24" rx="8" fill="none" stroke="#2B2725" stroke-width="7"/></g>
+      <g data-v><path d="M372 66h-58a14 14 0 0 0-14 14v34a14 14 0 0 0 14 14h12l-4 20 20-20h30a14 14 0 0 0 14-14V80a14 14 0 0 0-14-14z" fill="#E4572E" transform="translate(30 -26)"/></g>
     </svg>
     <div class="vz-c">
       <p class="vz-t">Теперь всё по-настоящему</p>
@@ -1024,10 +1232,10 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--red)}
   <div class="ctr rv"><h2>Итог. <em>Ключ на стойке</em></h2></div>
   <figure class="vz" data-vz style="max-width:760px;margin:30px auto 0">
     <svg class="vz-a" viewBox="0 0 640 320" role="img" aria-label="На стойке лежит ключ с красной биркой и стоит звонок">
-      <rect width="640" height="320" fill="#F6F1EB"/>
+      <rect width="640" height="320" fill="#F5F3F1"/>
       <rect y="216" width="640" height="104" fill="#2B2725"/><rect y="206" width="640" height="22" fill="#B98A5E"/>
       <g data-v><path d="M430 206a62 62 0 0 1 124 0z" fill="#C9A45C"/><rect x="484" y="132" width="16" height="18" rx="5" fill="#A98440"/><rect x="416" y="200" width="152" height="14" rx="4" fill="#A98440"/></g>
-      <g data-v><g transform="rotate(-12 196 210)"><circle cx="118" cy="190" r="34" fill="none" stroke="#C9A45C" stroke-width="16"/><path d="M152 190h96M224 190v24M200 190v18" stroke="#C9A45C" stroke-width="16" stroke-linecap="round"/><rect x="260" y="160" width="96" height="60" rx="10" fill="#E3283A"/><text x="308" y="190" text-anchor="middle" dominant-baseline="central" font-family="Manrope,sans-serif" font-weight="800" font-size="32" fill="#fff">305</text></g></g>
+      <g data-v><g transform="rotate(-12 196 210)"><circle cx="118" cy="190" r="34" fill="none" stroke="#C9A45C" stroke-width="16"/><path d="M152 190h96M224 190v24M200 190v18" stroke="#C9A45C" stroke-width="16" stroke-linecap="round"/><rect x="260" y="160" width="96" height="60" rx="10" fill="#E4572E"/><text x="308" y="190" text-anchor="middle" dominant-baseline="central" font-family="Inter,sans-serif" font-weight="800" font-size="32" fill="#fff">305</text></g></g>
     </svg>
     <div class="vz-c">
       <p class="vz-t">Вещь, хвост, глагол. Ключ на стойке.</p>
@@ -1115,8 +1323,8 @@ $$('.scene').forEach(function(sc){var type=sc.getAttribute('data-scene'),n=+sc.g
   if(type==='tiles'){var ts=$$('.tile',sc);ts.forEach(function(t,i){tl.fromTo(t,{y:-130,x:i%2?70:-70,rotation:i%2?16:-16,scale:.55,autoAlpha:0},{y:0,x:0,rotation:0,scale:1,autoAlpha:1,ease:'back.out(1.7)',duration:.62},i===0?0:i)});
     var rows=$$('.tiles',sc);tl.to(rows[0],{columnGap:0,duration:.34},n-1+.42)}
   if(type==='harmony'){var ws=$$('.hw',sc),op=$$('.opt',sc),sum=$('.hsum',sc);$$('div',sum).forEach(function(d,k){G.set(d,{autoAlpha:0,scale:.7});tl.to(d,{autoAlpha:1,scale:1,ease:'back.out(2)',duration:.18},4.15+k*.14)});
-    ws.forEach(function(w,i){var v=$('.vw',w),s=$('.suf',w);G.set(w,{autoAlpha:0,y:26});G.set(s,{autoAlpha:0,y:-74});tl.to(w,{autoAlpha:1,y:0,duration:.2},i).to(v,{backgroundColor:'#F9DFD0',color:'#E3283A',scale:1.22,duration:.18},i+.22).to(op[i],{backgroundColor:'#E3283A',color:'#fff',scale:1.08,duration:.14},i+.42).to(s,{autoAlpha:1,y:0,ease:'back.out(2.2)',duration:.28},i+.5);
-      if(i<3){tl.to(w,{autoAlpha:0,y:-22,duration:.14},i+.88).to(op[i],{backgroundColor:'#F7F4F1',color:'#6A6462',scale:1,duration:.1},i+.88)}else{tl.to(op[i],{backgroundColor:'#F7F4F1',color:'#6A6462',scale:1,duration:.12},4)}})}
+    ws.forEach(function(w,i){var v=$('.vw',w),s=$('.suf',w);G.set(w,{autoAlpha:0,y:26});G.set(s,{autoAlpha:0,y:-74});tl.to(w,{autoAlpha:1,y:0,duration:.2},i).to(v,{backgroundColor:'#F9DFD0',color:'#E4572E',scale:1.22,duration:.18},i+.22).to(op[i],{backgroundColor:'#E4572E',color:'#fff',scale:1.08,duration:.14},i+.42).to(s,{autoAlpha:1,y:0,ease:'back.out(2.2)',duration:.28},i+.5);
+      if(i<3){tl.to(w,{autoAlpha:0,y:-22,duration:.14},i+.88).to(op[i],{backgroundColor:'#F5F3F1',color:'#777169',scale:1,duration:.1},i+.88)}else{tl.to(op[i],{backgroundColor:'#F5F3F1',color:'#777169',scale:1,duration:.12},4)}})}
   if(type==='cons'){var sets=$$('.cset>div',sc);sets.forEach(function(s,i){var ol=$('.ol',s),nw=$('.nw',s),sf=$('.sf',s);G.set(nw,{rotationX:-90});G.set(sf,{autoAlpha:0,x:40});if(i)G.set(s,{autoAlpha:0,y:26});
       if(i)tl.to(s,{autoAlpha:1,y:0,duration:.18},i);tl.to(sf,{autoAlpha:1,x:0,ease:'back.out(2)',duration:.26},i+.2).to(ol,{rotationX:90,duration:.16,ease:'power1.in'},i+.44).to(nw,{rotationX:0,duration:.2,ease:'back.out(2)'},i+.6);
       if(i<sets.length-1)tl.to(s,{autoAlpha:0,y:-22,duration:.14},i+.9)})}
@@ -1126,12 +1334,12 @@ $$('.scene').forEach(function(sc){var type=sc.getAttribute('data-scene'),n=+sc.g
     tl.to(zz,{y:70,rotation:30,autoAlpha:0,duration:.3,ease:'power2.in'},1);
     mov.forEach(function(c,k){tl.to(c,{x:function(){return tx(c)},y:0,duration:.46,ease:'back.inOut(1.3)'},1.18+k*.03)});
     tl.call(function(){H.textContent=tl.time()>=1?'Как строит турок':'Как сказали бы мы'},null,1.05).call(function(){H.textContent=tl.time()>=1?'Как строит турок':'Как сказали бы мы'},null,.98);
-    $$('.chipw[data-o]',sc).forEach(function(c){tl.to($('.rr',c),{autoAlpha:0,y:-10,duration:.16},2.1).to($('.tt',c),{autoAlpha:1,y:0,duration:.2},2.2).to(c,{backgroundColor:'#FCEFE7',duration:.2},2.2)});
-    var ist=$('[data-o="3"]',sc);tl.to(ist,{backgroundColor:'#E3283A',duration:.16},3.1).to($('.tt',ist),{color:'#fff',duration:.16},3.1).to(ist,{scale:1.1,ease:'back.out(3)',duration:.3},3.14);
+    $$('.chipw[data-o]',sc).forEach(function(c){tl.to($('.rr',c),{autoAlpha:0,y:-10,duration:.16},2.1).to($('.tt',c),{autoAlpha:1,y:0,duration:.2},2.2).to(c,{backgroundColor:'#FAF8F6',duration:.2},2.2)});
+    var ist=$('[data-o="3"]',sc);tl.to(ist,{backgroundColor:'#E4572E',duration:.16},3.1).to($('.tt',ist),{color:'#fff',duration:.16},3.1).to(ist,{scale:1.1,ease:'back.out(3)',duration:.3},3.14);
   }
-  if(type==='time'){var f=$('.tr-f',sc),bag=$('.bag',sc),nds=$$('.nd i',sc);G.set(f,{scaleX:0});tl.to(nds[0],{backgroundColor:'#E3283A',duration:.15},.2);
-    tl.to(f,{scaleX:.5,duration:.7,ease:'none'},.75).to(bag,{left:'50%',duration:.7,ease:'none'},.75).to(nds[1],{backgroundColor:'#E3283A',duration:.15},1.4);
-    tl.to(f,{scaleX:1,duration:.7,ease:'none'},1.75).to(bag,{left:'88%',duration:.7,ease:'none'},1.75).to(nds[2],{backgroundColor:'#E3283A',duration:.15},2.4)}
+  if(type==='time'){var f=$('.tr-f',sc),bag=$('.bag',sc),nds=$$('.nd i',sc);G.set(f,{scaleX:0});tl.to(nds[0],{backgroundColor:'#E4572E',duration:.15},.2);
+    tl.to(f,{scaleX:.5,duration:.7,ease:'none'},.75).to(bag,{left:'50%',duration:.7,ease:'none'},.75).to(nds[1],{backgroundColor:'#E4572E',duration:.15},1.4);
+    tl.to(f,{scaleX:1,duration:.7,ease:'none'},1.75).to(bag,{left:'88%',duration:.7,ease:'none'},1.75).to(nds[2],{backgroundColor:'#E4572E',duration:.15},2.4)}
 });
 addEventListener('load',function(){fitSov();ScrollTrigger.refresh()});if(D.fonts&&D.fonts.ready)D.fonts.ready.then(function(){fitSov();ScrollTrigger.refresh()});
 }
